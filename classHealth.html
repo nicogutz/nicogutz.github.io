@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe7ce3300f45e6a5ed8eff34c2812223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHealth.html">Health</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#abe7ce3300f45e6a5ed8eff34c2812223">operator=</a> (const <a class="el" href="classHealth.html">Health</a> &amp;)</td></tr>
 <tr class="separator:abe7ce3300f45e6a5ed8eff34c2812223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f3395c37c1cbe938be776fd62bdbae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">heal</a> (const QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &amp;target)</td></tr>
-<tr class="memdesc:a94f3395c37c1cbe938be776fd62bdbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals an object.  <a href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">More...</a><br /></td></tr>
+<tr class="memdesc:a94f3395c37c1cbe938be776fd62bdbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals an object. It is important to differentiate a simple health change and healing. Healing can involve more than simply changing health. For example, it can remove poison on the target, it can decrease the health of the owner, etc.  <a href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">More...</a><br /></td></tr>
 <tr class="separator:a94f3395c37c1cbe938be776fd62bdbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b64418057c4aa2c5b53f4671c8b9433"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#a5b64418057c4aa2c5b53f4671c8b9433">getHealthChanged</a> (int amount)</td></tr>
 <tr class="memdesc:a5b64418057c4aa2c5b53f4671c8b9433"><td class="mdescLeft">&#160;</td><td class="mdescRight">getHealthChange change the health of the owner.  <a href="classHealth.html#a5b64418057c4aa2c5b53f4671c8b9433">More...</a><br /></td></tr>
@@ -153,6 +153,7 @@ Static Public Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBehavior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a></td></tr>
+<tr class="memdesc:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_owner the <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> this behavior belongs to.  <a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">More...</a><br /></td></tr>
 <tr class="separator:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -342,14 +343,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>heal heals an object. </p>
+<p>heal heals an object. It is important to differentiate a simple health change and healing. Healing can involve more than simply changing health. For example, it can remove poison on the target, it can decrease the health of the owner, etc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>object to heal. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>amount healed. It is important to differentiate a simple health change and healing. Healing can involve more than simply changing health. For example, it can remove poison on the target, it can decrease the health of the owner, etc. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>amount healed. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericHealingBehavior.html#a878308dcc22196c03615a72a93e65a08">GenericHealingBehavior</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                         {</div>

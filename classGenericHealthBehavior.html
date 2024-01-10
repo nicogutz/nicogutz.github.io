@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d65e73746657bda339d45bbe205b3eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericHealthBehavior.html#a2d65e73746657bda339d45bbe205b3eb">GenericHealthBehavior</a> ()=delete</td></tr>
 <tr class="separator:a2d65e73746657bda339d45bbe205b3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04d2b1978cccd56a4985efd5df51c64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericHealthBehavior.html#ac04d2b1978cccd56a4985efd5df51c64">getHealthChanged</a> (int amount) override</td></tr>
-<tr class="memdesc:ac04d2b1978cccd56a4985efd5df51c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">getHealthChanged changes the health of an object by a specified amount.  <a href="classGenericHealthBehavior.html#ac04d2b1978cccd56a4985efd5df51c64">More...</a><br /></td></tr>
+<tr class="memdesc:ac04d2b1978cccd56a4985efd5df51c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">getHealthChanged changes the health of an object by a specified amount. This function will change the health up to the MAX_HEALTH and MIN_HEALTH. If the amount to change makes the health lower than MIN_HEALTH, it will cause the object to die. If it makes it bigger than MAX_HEALTH, it will cause the object to heal to the max and returns the difference between current health (before healing) and MAX_HEALTH.  <a href="classGenericHealthBehavior.html#ac04d2b1978cccd56a4985efd5df51c64">More...</a><br /></td></tr>
 <tr class="separator:ac04d2b1978cccd56a4985efd5df51c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38f1fd00edbe71b56805a93283a797dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericHealthBehavior.html#a38f1fd00edbe71b56805a93283a797dc">die</a> () override</td></tr>
 <tr class="memdesc:a38f1fd00edbe71b56805a93283a797dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">die kills an object, deletes them. Since the health = 0 is set in the getHealthChanged function.  <a href="classGenericHealthBehavior.html#a38f1fd00edbe71b56805a93283a797dc">More...</a><br /></td></tr>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe7ce3300f45e6a5ed8eff34c2812223 inherit pub_methods_classHealth"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHealth.html">Health</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#abe7ce3300f45e6a5ed8eff34c2812223">operator=</a> (const <a class="el" href="classHealth.html">Health</a> &amp;)</td></tr>
 <tr class="separator:abe7ce3300f45e6a5ed8eff34c2812223 inherit pub_methods_classHealth"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f3395c37c1cbe938be776fd62bdbae inherit pub_methods_classHealth"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">heal</a> (const QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &amp;target)</td></tr>
-<tr class="memdesc:a94f3395c37c1cbe938be776fd62bdbae inherit pub_methods_classHealth"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals an object.  <a href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">More...</a><br /></td></tr>
+<tr class="memdesc:a94f3395c37c1cbe938be776fd62bdbae inherit pub_methods_classHealth"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals an object. It is important to differentiate a simple health change and healing. Healing can involve more than simply changing health. For example, it can remove poison on the target, it can decrease the health of the owner, etc.  <a href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">More...</a><br /></td></tr>
 <tr class="separator:a94f3395c37c1cbe938be776fd62bdbae inherit pub_methods_classHealth"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBehavior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:a6d1c06c78a3a665e68584722da7d8125 inherit pub_methods_classBehavior"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#a6d1c06c78a3a665e68584722da7d8125">Behavior</a> (QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; owner)</td></tr>
@@ -149,6 +149,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad62e0beaed81a07526ead044ade5058f inherit pub_static_attribs_classHealth"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBehavior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a></td></tr>
+<tr class="memdesc:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_owner the <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> this behavior belongs to.  <a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">More...</a><br /></td></tr>
 <tr class="separator:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -249,7 +250,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Destroyed DataRole here</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
+<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -277,14 +278,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>getHealthChanged changes the health of an object by a specified amount. </p>
+<p>getHealthChanged changes the health of an object by a specified amount. This function will change the health up to the MAX_HEALTH and MIN_HEALTH. If the amount to change makes the health lower than MIN_HEALTH, it will cause the object to die. If it makes it bigger than MAX_HEALTH, it will cause the object to heal to the max and returns the difference between current health (before healing) and MAX_HEALTH. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">amount</td><td>the amount to change, can be negative. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the health changed. This function will change the health up to the MAX_HEALTH and MIN_HEALTH. If the amount to change makes the health lower than MIN_HEALTH, it will cause the object to die. If it makes it bigger than MAX_HEALTH, it will cause the object to heal to the max and returns the difference between current health (before healing) and MAX_HEALTH. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the health changed. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classHealth.html#a5b64418057c4aa2c5b53f4671c8b9433">Health</a>.</p>
 <div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                                                      {</div>

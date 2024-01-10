@@ -110,6 +110,7 @@ Inheritance diagram for Poison:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPoison_1_1SETTINGS.html">SETTINGS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for <a class="el" href="classPoison.html" title="The Poison class is an abstract class that handles poison actions.">Poison</a>.  <a href="structPoison_1_1SETTINGS.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -149,6 +150,7 @@ Static Public Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBehavior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a></td></tr>
+<tr class="memdesc:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_owner the <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> this behavior belongs to.  <a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">More...</a><br /></td></tr>
 <tr class="separator:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -291,9 +293,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> newPoison - poisonLevel.toInt();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
+<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
 <div class="ttc" id="aclassPoison_html_ae183843910d984a7035bf148af3428d8"><div class="ttname"><a href="classPoison.html#ae183843910d984a7035bf148af3428d8">Poison::Settings</a></div><div class="ttdeci">static const struct Poison::SETTINGS Settings</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a3dab882ceb47c6c5eb62564ffe8e90f8"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a3dab882ceb47c6c5eb62564ffe8e90f8">Poison::SETTINGS::MAX_POISON</a></div><div class="ttdeci">constexpr static int MAX_POISON</div><div class="ttdef"><b>Definition:</b> poison.h:30</div></div>
+<div class="ttc" id="astructPoison_1_1SETTINGS_html_a3dab882ceb47c6c5eb62564ffe8e90f8"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a3dab882ceb47c6c5eb62564ffe8e90f8">Poison::SETTINGS::MAX_POISON</a></div><div class="ttdeci">constexpr static int MAX_POISON</div><div class="ttdoc">Max/Min allowed amount of poison for a Game Object to get during gameplay.</div><div class="ttdef"><b>Definition:</b> poison.h:35</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,9 +362,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>poison amount. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericPoisoningBehavior.html#a7a29d0729e910bbab02dd95cf2b20429">GenericPoisoningBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                           {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                           {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>
 </div><!-- fragment -->
 </div>
 </div>

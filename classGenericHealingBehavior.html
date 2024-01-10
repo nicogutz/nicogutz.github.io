@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85c7a0d81bee8c2ce6b9c51de7512a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericHealingBehavior.html#a85c7a0d81bee8c2ce6b9c51de7512a55">GenericHealingBehavior</a> ()=delete</td></tr>
 <tr class="separator:a85c7a0d81bee8c2ce6b9c51de7512a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878308dcc22196c03615a72a93e65a08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericHealingBehavior.html#a878308dcc22196c03615a72a93e65a08">heal</a> (const QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &amp;target) override</td></tr>
-<tr class="memdesc:a878308dcc22196c03615a72a93e65a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals target by an amount and cures it of poison.  <a href="classGenericHealingBehavior.html#a878308dcc22196c03615a72a93e65a08">More...</a><br /></td></tr>
+<tr class="memdesc:a878308dcc22196c03615a72a93e65a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">heal heals target by an amount and cures it of poison. This will heal the target using as much health as the owner has. If the owner has less health than the target can be healed, it is destroyed after healing.  <a href="classGenericHealingBehavior.html#a878308dcc22196c03615a72a93e65a08">More...</a><br /></td></tr>
 <tr class="separator:a878308dcc22196c03615a72a93e65a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classHealth"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classHealth')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classHealth.html">Health</a></td></tr>
 <tr class="memitem:aa24527c105cd32770324ff26a78f021d inherit pub_methods_classHealth"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHealth.html#aa24527c105cd32770324ff26a78f021d">Health</a> (QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; owner)</td></tr>
@@ -148,6 +148,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad62e0beaed81a07526ead044ade5058f inherit pub_static_attribs_classHealth"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBehavior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a></td></tr>
+<tr class="memdesc:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_owner the <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> this behavior belongs to.  <a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">More...</a><br /></td></tr>
 <tr class="separator:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -239,14 +240,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>heal heals target by an amount and cures it of poison. </p>
+<p>heal heals target by an amount and cures it of poison. This will heal the target using as much health as the owner has. If the owner has less health than the target can be healed, it is destroyed after healing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>target to heal. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>amount healed. This will heal the target using as much health as the owner has. If the owner has less health than the target can be healed, it is destroyed after healing. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>amount healed. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classHealth.html#a94f3395c37c1cbe938be776fd62bdbae">Health</a>.</p>
 <div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                                                   {</div>
@@ -272,10 +273,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> healAmount;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
+<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
 <div class="ttc" id="aclassHealth_html"><div class="ttname"><a href="classHealth.html">Health</a></div><div class="ttdoc">The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ...</div><div class="ttdef"><b>Definition:</b> health.h:14</div></div>
 <div class="ttc" id="aclassHealth_html_a5b64418057c4aa2c5b53f4671c8b9433"><div class="ttname"><a href="classHealth.html#a5b64418057c4aa2c5b53f4671c8b9433">Health::getHealthChanged</a></div><div class="ttdeci">virtual int getHealthChanged(int amount)</div><div class="ttdoc">getHealthChange change the health of the owner.</div><div class="ttdef"><b>Definition:</b> health.h:56</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdef"><b>Definition:</b> poison.h:31</div></div>
+<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdoc">Max/Min allowed amount of poison for a Game Object to get during gameplay.</div><div class="ttdef"><b>Definition:</b> poison.h:36</div></div>
 </div><!-- fragment -->
 </div>
 </div>

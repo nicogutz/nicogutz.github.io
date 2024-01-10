@@ -101,10 +101,10 @@ Inheritance diagram for Renderer:</div>
 <div class="center"><img src="classRenderer__inherit__graph.png" border="0" usemap="#aRenderer_inherit__map" alt="Inheritance graph"/></div>
 <map name="aRenderer_inherit__map" id="aRenderer_inherit__map">
 <area shape="rect" title="The Renderer class is a base class for the renderers that use different visualizations for objects." alt="" coords="319,5,603,537"/>
-<area shape="rect" href="classColorRenderer.html" title="The ColorRenderer class makes shapes filled with colors to represent the world." alt="" coords="5,600,244,1044"/>
-<area shape="rect" href="classOverlayRenderer.html" title=" " alt="" coords="269,783,426,861"/>
-<area shape="rect" href="classSpriteRenderer.html" title="The SpriteRenderer class handles the conversion of data to GamePixmapItems. It also animates behavior..." alt="" coords="450,585,701,1059"/>
-<area shape="rect" href="classTextRenderer.html" title="TextRenderer Performs rendering of the objects for the text view." alt="" coords="725,717,929,927"/>
+<area shape="rect" href="classColorRenderer.html" title="The ColorRenderer class makes shapes filled with colors to represent the world." alt="" coords="5,629,244,1073"/>
+<area shape="rect" href="classOverlayRenderer.html" title=" " alt="" coords="269,813,426,890"/>
+<area shape="rect" href="classSpriteRenderer.html" title="The SpriteRenderer class handles the conversion of data to GamePixmapItems. It also animates behavior..." alt="" coords="450,585,701,1117"/>
+<area shape="rect" href="classTextRenderer.html" title="TextRenderer Performs rendering of the objects for the text view." alt="" coords="725,747,929,956"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -117,10 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab760d69bc781781e29c4249721dfb487"><td class="mdescLeft">&#160;</td><td class="mdescRight">renderGameObjects renders the initial state of the world  <a href="classRenderer.html#ab760d69bc781781e29c4249721dfb487">More...</a><br /></td></tr>
 <tr class="separator:ab760d69bc781781e29c4249721dfb487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a3073d563bc905a2d8244805f54727"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classGamePixmapItem.html">GamePixmapItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderer.html#ac9a3073d563bc905a2d8244805f54727">renderGameObject</a> (QMap&lt; <a class="el" href="namespace__pub.html#a4b113076a0d9baa622ddf9a4e4b35c19">DataRole</a>, QVariant &gt; objectData)</td></tr>
-<tr class="memdesc:ac9a3073d563bc905a2d8244805f54727"><td class="mdescLeft">&#160;</td><td class="mdescRight">renderGameObject creates <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> and sets the objectData on it  <a href="classRenderer.html#ac9a3073d563bc905a2d8244805f54727">More...</a><br /></td></tr>
+<tr class="memdesc:ac9a3073d563bc905a2d8244805f54727"><td class="mdescLeft">&#160;</td><td class="mdescRight">renderGameObject creates <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> and sets the objectData on it This function is overloaded in some child classes of <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a>  <a href="classRenderer.html#ac9a3073d563bc905a2d8244805f54727">More...</a><br /></td></tr>
 <tr class="separator:ac9a3073d563bc905a2d8244805f54727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a342fd69a2cc4865d0b5df3fe310de8b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderer.html#a342fd69a2cc4865d0b5df3fe310de8b0">renderGameObject</a> (QMap&lt; <a class="el" href="namespace__pub.html#a4b113076a0d9baa622ddf9a4e4b35c19">DataRole</a>, QVariant &gt; objectData, <a class="el" href="classGamePixmapItem.html">GamePixmapItem</a> *item)</td></tr>
-<tr class="memdesc:a342fd69a2cc4865d0b5df3fe310de8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">renderGameObject applies latest change to the object visually to show change of the state  <a href="classRenderer.html#a342fd69a2cc4865d0b5df3fe310de8b0">More...</a><br /></td></tr>
+<tr class="memdesc:a342fd69a2cc4865d0b5df3fe310de8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">renderGameObject applies latest change to the object visually to show change of the state Gets overloaded in <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a>'s child classes  <a href="classRenderer.html#a342fd69a2cc4865d0b5df3fe310de8b0">More...</a><br /></td></tr>
 <tr class="separator:a342fd69a2cc4865d0b5df3fe310de8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408a89554240661033564b849d64bcac"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderer.html#a408a89554240661033564b849d64bcac">rotatePixmap</a> (const QPixmap &amp;originalPixmap, int direction)</td></tr>
 <tr class="memdesc:a408a89554240661033564b849d64bcac"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotatePixmap rotated the pixmap based on direction  <a href="classRenderer.html#a408a89554240661033564b849d64bcac">More...</a><br /></td></tr>
@@ -508,11 +508,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>renderGameObject creates <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> and sets the objectData on it </p>
+<p>renderGameObject creates <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> and sets the objectData on it This function is overloaded in some child classes of <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectData</td><td>The <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> data to set on the item </td></tr>
-    <tr><td class="paramname">item</td><td>The <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> which is teh separate tile in the world This function is overloaded in some child classes of <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a> </td></tr>
+    <tr><td class="paramname">item</td><td>The <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> which is teh separate tile in the world </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,11 +561,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>renderGameObject applies latest change to the object visually to show change of the state </p>
+<p>renderGameObject applies latest change to the object visually to show change of the state Gets overloaded in <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a>'s child classes </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectData</td><td>the data of the item </td></tr>
-    <tr><td class="paramname">item</td><td>the item to animate changes of Gets overloaded in <a class="el" href="classRenderer.html" title="The Renderer class is a base class for the renderers that use different visualizations for objects.">Renderer</a>'s child classes </td></tr>
+    <tr><td class="paramname">item</td><td>the item to animate changes of </td></tr>
   </table>
   </dd>
 </dl>
@@ -661,7 +661,7 @@ Static Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> tile;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="aclassRenderer_html_ac9a3073d563bc905a2d8244805f54727"><div class="ttname"><a href="classRenderer.html#ac9a3073d563bc905a2d8244805f54727">Renderer::renderGameObject</a></div><div class="ttdeci">virtual GamePixmapItem * renderGameObject(QMap&lt; DataRole, QVariant &gt; objectData)</div><div class="ttdoc">renderGameObject creates GamePixmapItem and sets the objectData on it</div><div class="ttdef"><b>Definition:</b> renderer.cpp:20</div></div>
+<div class="ttc" id="aclassRenderer_html_ac9a3073d563bc905a2d8244805f54727"><div class="ttname"><a href="classRenderer.html#ac9a3073d563bc905a2d8244805f54727">Renderer::renderGameObject</a></div><div class="ttdeci">virtual GamePixmapItem * renderGameObject(QMap&lt; DataRole, QVariant &gt; objectData)</div><div class="ttdoc">renderGameObject creates GamePixmapItem and sets the objectData on it This function is overloaded in ...</div><div class="ttdef"><b>Definition:</b> renderer.cpp:20</div></div>
 </div><!-- fragment -->
 </div>
 </div>

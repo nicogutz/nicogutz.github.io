@@ -115,7 +115,7 @@ Public Slots</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42f2cdf324e50e6ca15e2502663a1362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericPoisonableBehavior.html#a42f2cdf324e50e6ca15e2502663a1362">GenericPoisonableBehavior</a> (QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; owner)</td></tr>
-<tr class="memdesc:a42f2cdf324e50e6ca15e2502663a1362"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison....">GenericPoisonableBehavior</a> default constructor.  <a href="classGenericPoisonableBehavior.html#a42f2cdf324e50e6ca15e2502663a1362">More...</a><br /></td></tr>
+<tr class="memdesc:a42f2cdf324e50e6ca15e2502663a1362"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison....">GenericPoisonableBehavior</a> default constructor. This behavior connects the tick signal of its owner to its poisonEffect slot.  <a href="classGenericPoisonableBehavior.html#a42f2cdf324e50e6ca15e2502663a1362">More...</a><br /></td></tr>
 <tr class="separator:a42f2cdf324e50e6ca15e2502663a1362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0829b4247ef8b3515caa715f270512d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenericPoisonableBehavior.html#aa0829b4247ef8b3515caa715f270512d">GenericPoisonableBehavior</a> ()=delete</td></tr>
 <tr class="separator:aa0829b4247ef8b3515caa715f270512d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +153,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae183843910d984a7035bf148af3428d8 inherit pub_static_attribs_classPoison"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classBehavior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBehavior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBehavior.html">Behavior</a></td></tr>
 <tr class="memitem:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a></td></tr>
+<tr class="memdesc:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_owner the <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a> this behavior belongs to.  <a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">More...</a><br /></td></tr>
 <tr class="separator:abe74f58cf2f890c3270ef06aa68d3c24 inherit pro_attribs_classBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -182,10 +183,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison....">GenericPoisonableBehavior</a> default constructor. </p>
+<p><a class="el" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison....">GenericPoisonableBehavior</a> default constructor. This behavior connects the tick signal of its owner to its poisonEffect slot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">owner</td><td>the owner of the behavior. This behavior connects the tick signal of its owner to its poisonEffect slot. </td></tr>
+    <tr><td class="paramname">owner</td><td>the owner of the behavior. </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,11 +270,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::PoisonLevel, 0);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
+<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
 <div class="ttc" id="aclassHealth_html"><div class="ttname"><a href="classHealth.html">Health</a></div><div class="ttdoc">The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ...</div><div class="ttdef"><b>Definition:</b> health.h:14</div></div>
 <div class="ttc" id="aclassPoison_html_ae183843910d984a7035bf148af3428d8"><div class="ttname"><a href="classPoison.html#ae183843910d984a7035bf148af3428d8">Poison::Settings</a></div><div class="ttdeci">static const struct Poison::SETTINGS Settings</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdef"><b>Definition:</b> poison.h:31</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a59e0966c9e89b6b533427fac9d24ed85"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a59e0966c9e89b6b533427fac9d24ed85">Poison::SETTINGS::DAMAGE_PER_TICK</a></div><div class="ttdeci">constexpr static int DAMAGE_PER_TICK</div><div class="ttdef"><b>Definition:</b> poison.h:46</div></div>
+<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdoc">Max/Min allowed amount of poison for a Game Object to get during gameplay.</div><div class="ttdef"><b>Definition:</b> poison.h:36</div></div>
+<div class="ttc" id="astructPoison_1_1SETTINGS_html_a59e0966c9e89b6b533427fac9d24ed85"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a59e0966c9e89b6b533427fac9d24ed85">Poison::SETTINGS::DAMAGE_PER_TICK</a></div><div class="ttdeci">constexpr static int DAMAGE_PER_TICK</div><div class="ttdoc">How much damage poison does per tick.</div><div class="ttdef"><b>Definition:</b> poison.h:54</div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -138,16 +138,16 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                               {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a666684b0e530b29a54005d9269b9357d">setData</a>(<a class="code" href="structGameObjectSettings_1_1TileSettings.html#ad8521640235f71b88969184b51ff22cd">defaultData</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classMovement.html">Movement</a>&gt;(QSharedPointer&lt;PoisonOnStepBehavior&gt;::create(obj));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classPoison.html">Poison</a>&gt;(QSharedPointer&lt;GenericPoisoningBehavior&gt;::create(obj));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        };</div>
-<div class="ttc" id="aclassGameObject_html_a0ad9e839d13e9da54793255e6b2fc8c8"><div class="ttname"><a href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">GameObject::setBehavior</a></div><div class="ttdeci">void setBehavior(QSharedPointer&lt; T &gt; behavior)</div><div class="ttdoc">Sets a behavior for the GameObject.</div><div class="ttdef"><b>Definition:</b> gameobject.h:109</div></div>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                               {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a666684b0e530b29a54005d9269b9357d">setData</a>(<a class="code" href="structGameObjectSettings_1_1TileSettings.html#ad8521640235f71b88969184b51ff22cd">defaultData</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classMovement.html">Movement</a>&gt;(QSharedPointer&lt;PoisonOnStepBehavior&gt;::create(obj));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classPoison.html">Poison</a>&gt;(QSharedPointer&lt;GenericPoisoningBehavior&gt;::create(obj));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        };</div>
+<div class="ttc" id="aclassGameObject_html_a0ad9e839d13e9da54793255e6b2fc8c8"><div class="ttname"><a href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">GameObject::setBehavior</a></div><div class="ttdeci">void setBehavior(QSharedPointer&lt; T &gt; behavior)</div><div class="ttdoc">Sets a behavior for the GameObject.</div><div class="ttdef"><b>Definition:</b> gameobject.h:106</div></div>
 <div class="ttc" id="aclassGameObject_html_a666684b0e530b29a54005d9269b9357d"><div class="ttname"><a href="classGameObject.html#a666684b0e530b29a54005d9269b9357d">GameObject::setData</a></div><div class="ttdeci">void setData(DataRole role, QVariant value)</div><div class="ttdoc">Sets data for a specific role.</div><div class="ttdef"><b>Definition:</b> gameobject.cpp:57</div></div>
 <div class="ttc" id="aclassMovement_html"><div class="ttname"><a href="classMovement.html">Movement</a></div><div class="ttdoc">The Movement class handles the actions of moving. It is an abstract class. All the functions return f...</div><div class="ttdef"><b>Definition:</b> movement.h:18</div></div>
 <div class="ttc" id="aclassPoison_html"><div class="ttname"><a href="classPoison.html">Poison</a></div><div class="ttdoc">The Poison class is an abstract class that handles poison actions.</div><div class="ttdef"><b>Definition:</b> poison.h:12</div></div>
-<div class="ttc" id="astructGameObjectSettings_1_1TileSettings_html_ad8521640235f71b88969184b51ff22cd"><div class="ttname"><a href="structGameObjectSettings_1_1TileSettings.html#ad8521640235f71b88969184b51ff22cd">GameObjectSettings::TileSettings::defaultData</a></div><div class="ttdeci">static const QList&lt; QPair&lt; DataRole, QVariant &gt; &gt; defaultData</div><div class="ttdef"><b>Definition:</b> gameobjectsettings.h:56</div></div>
+<div class="ttc" id="astructGameObjectSettings_1_1TileSettings_html_ad8521640235f71b88969184b51ff22cd"><div class="ttname"><a href="structGameObjectSettings_1_1TileSettings.html#ad8521640235f71b88969184b51ff22cd">GameObjectSettings::TileSettings::defaultData</a></div><div class="ttdeci">static const QList&lt; QPair&lt; DataRole, QVariant &gt; &gt; defaultData</div><div class="ttdef"><b>Definition:</b> gameobjectsettings.h:55</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,7 +175,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">          {DataRole::Type, QVariant::fromValue&lt;ObjectType&gt;(ObjectType::Tile)},</div>
 <div class="line">          {DataRole::PoisonLevel, <a class="code" href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a>},</div>
 <div class="line">        }</div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdef"><b>Definition:</b> poison.h:31</div></div>
+<div class="ttc" id="astructPoison_1_1SETTINGS_html_a1757b044e954f00d5b9080f2323a46fd"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a1757b044e954f00d5b9080f2323a46fd">Poison::SETTINGS::MIN_POISON</a></div><div class="ttdeci">constexpr static int MIN_POISON</div><div class="ttdoc">Max/Min allowed amount of poison for a Game Object to get during gameplay.</div><div class="ttdef"><b>Definition:</b> poison.h:36</div></div>
 </div><!-- fragment -->
 </div>
 </div>
