@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['behavior_19',['Behavior',['../classBehavior.html',1,'Behavior'],['../classBehavior.html#a6d1c06c78a3a665e68584722da7d8125',1,'Behavior::Behavior(QPointer&lt; GameObject &gt; owner)'],['../classBehavior.html#aab6b9945e55735c64af699fef74b23cf',1,'Behavior::Behavior()=delete']]],
-  ['behavior_2ecpp_20',['behavior.cpp',['../behavior_8cpp.html',1,'']]],
-  ['behavior_2eh_21',['behavior.h',['../behavior_8h.html',1,'']]],
-  ['behaviors_2eh_22',['behaviors.h',['../behaviors_8h.html',1,'']]],
-  ['bottomleft_23',['BottomLeft',['../namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0a98e5a1c44509157ebcaf46c515c78875',1,'_pub']]],
-  ['bottomright_24',['BottomRight',['../namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0a9146bfc669fddc88db2c4d89297d0e9a',1,'_pub']]]
+  ['addanimation_4',['addAnimation',['../classGamePixmapItem.html#adc2605d42d2bf0acab2f9de6c81070c0',1,'GamePixmapItem']]],
+  ['alive_5',['alive',['../structSpriteRenderer_1_1CharacterData.html#a9170b692b2ac0a547a61cae2e6495fdf',1,'SpriteRenderer::CharacterData']]],
+  ['animateattack_6',['animateAttack',['../classRenderer.html#a5f2b2e84a048a49c70accb543f16c2c3',1,'Renderer']]],
+  ['animatebounce_7',['animateBounce',['../classRenderer.html#a057a9baebbf1728f22e8e05df07c574f',1,'Renderer']]],
+  ['animatedeath_8',['animateDeath',['../classSpriteRenderer.html#ababc2b83da9daed8d5c14cdf04cd8473',1,'SpriteRenderer']]],
+  ['animatehealth_9',['animateHealth',['../classRenderer.html#a4a74633b19ddc256874cd8293738a54d',1,'Renderer']]],
+  ['animatehealthpack_10',['animateHealthPack',['../classRenderer.html#a612bc4b0ac0b70d04308cc576ab223eb',1,'Renderer']]],
+  ['animatehide_11',['animateHide',['../classRenderer.html#a31ecbc569624dd691458d6f4ef6d1357',1,'Renderer']]],
+  ['animatetint_12',['animateTint',['../classRenderer.html#a3425e525329a254b0b628dd3dc5a9bf1',1,'Renderer']]],
+  ['animationgroup_13',['animationGroup',['../classGamePixmapItem.html#a610cda52bfab35fc2bf2a7a4cb1fb669',1,'GamePixmapItem']]],
+  ['attack_14',['Attack',['../classAttack.html#a7e031fae5500343c3e330a95248cf0d3',1,'Attack']]],
+  ['attack_15',['attack',['../classGenericAttackBehavior.html#a619f4febb3487333cfe3c1f490236b2f',1,'GenericAttackBehavior::attack() override'],['../classGenericAttackBehavior.html#ad4f45b163593a3545c9bcdd51fc48f22',1,'GenericAttackBehavior::attack(Direction direction) override'],['../classGenericAttackBehavior.html#a94fd29737127d2eeddbcdd7561f30c47',1,'GenericAttackBehavior::attack(const QPointer&lt; GameObject &gt; &amp;target) override'],['../classAttack.html#aa64577a5b760b6c89370df954c7fb40b',1,'Attack::attack()=0'],['../classAttack.html#adebc3f42c4e60f7c72e024ba3ee164a3',1,'Attack::attack(Direction direction)=0'],['../classAttack.html#a7f50af344480fcdc7021247dfda1950e',1,'Attack::attack(const QPointer&lt; GameObject &gt; &amp;target)=0']]],
+  ['attack_16',['Attack',['../classAttack.html#ac439d984cd34274602b28edf8a954fce',1,'Attack::Attack()'],['../classAttack.html',1,'Attack']]],
+  ['attack_2ecpp_17',['attack.cpp',['../attack_8cpp.html',1,'']]],
+  ['attack_2eh_18',['attack.h',['../attack_8h.html',1,'']]],
+  ['automaticattack_19',['automaticAttack',['../classGameController.html#ad3471a5cf092b33a4b890a28cb9f51b1',1,'GameController']]]
 ];

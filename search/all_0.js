@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['_5fenemies_5fend_0',['_ENEMIES_END',['../namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbbab62d173732a4d50e06fea2f4d62045cc',1,'_pub']]],
-  ['_5fenemies_5fstart_1',['_ENEMIES_START',['../namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbbaddd558538701d1660b0f30903fbff644',1,'_pub']]],
-  ['_5fpub_2',['_pub',['../namespace__pub.html',1,'']]]
+  ['_3ca_20href_3d_22https_3a_2f_2fnicogutz_2egithub_2eio_2f_22_3eapt_20game_20full_20documentation_3c_2fa_3e_0',['&lt;a href=&quot;https://nicogutz.github.io/&quot;&gt;APT Game Full Documentation&lt;/a&gt;',['../index.html',1,'']]]
 ];

@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['ui_356',['Ui',['../namespaceUi.html',1,'']]],
-  ['up_357',['Up',['../namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0a258f49887ef8d14ac268c92b02503aaa',1,'_pub']]],
-  ['updateenergy_358',['updateEnergy',['../classGameController.html#a64608a1c7a700164f7ef6bd8cbde817d',1,'GameController']]],
-  ['updategameview_359',['updateGameView',['../classGameController.html#a6a8cde78a3a68f178cc4d1fbe2aed338',1,'GameController']]],
-  ['updatehealth_360',['updateHealth',['../classGameController.html#aa0a11370d64f5d500690f9af50d3c4f3',1,'GameController']]],
-  ['updatelevel_361',['updateLevel',['../classGameController.html#ae018941f9f2526233acee3e128a9b1ed',1,'GameController::updateLevel()'],['../classGameWindow.html#a7e758d5d263113dac4cbfe918f7c3661',1,'GameWindow::updateLevel()']]],
-  ['updateoverlay_362',['updateOverlay',['../classGamePixmapItem.html#abbff5eb6894586159d09eab0419f1ac1',1,'GamePixmapItem']]],
-  ['updatepathfindtriggerbutton_363',['updatePathFindTriggerButton',['../classGameWindow.html#a23f8302b5964f8bd3168a25e74ae55f7',1,'GameWindow']]],
-  ['updatepixmap_364',['updatePixmap',['../classGamePixmapItem.html#a6ffde2f175d755ab064d3e9ca378db1f',1,'GamePixmapItem']]],
-  ['updatetime_365',['updateTime',['../classGameWindow.html#a12244092cf194bf3ecf1dd0f649243e4',1,'GameWindow']]]
+  ['text_342',['Text',['../classGameController.html#a6bfff5b5f6dc78b5eb805045300aa56aa9dffbf69ffba8bc38bc4e01abf4b1675',1,'GameController']]],
+  ['textrenderer_343',['TextRenderer',['../classTextRenderer.html',1,'']]],
+  ['textrenderer_2ecpp_344',['textrenderer.cpp',['../textrenderer_8cpp.html',1,'']]],
+  ['textrenderer_2eh_345',['textrenderer.h',['../textrenderer_8h.html',1,'']]],
+  ['tick_346',['tick',['../classGameController.html#ad1f97b1326b012f47a1554a632a4df8c',1,'GameController::tick()'],['../classGameObject.html#a88feb2e3a638cedcebaf3ba8614f908f',1,'GameObject::tick()'],['../classGameObjectModel.html#a0724092d5eba5d4ebc4f2e6b7eff1156',1,'GameObjectModel::tick()']]],
+  ['tile_347',['Tile',['../classTile.html',1,'Tile'],['../namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbbac5457c5f3cfb4da8638ce7190f8e5152',1,'_pub::Tile()']]],
+  ['tile_5fcount_348',['TILE_COUNT',['../classSpriteRenderer.html#aba39a325f77669c8e0494bfd97f91171a7b3e4dbb386842de9803d178bc68408a',1,'SpriteRenderer']]],
+  ['tilesettings_349',['TileSettings',['../structGameObjectSettings_1_1TileSettings.html',1,'GameObjectSettings']]],
+  ['tint_350',['tint',['../classGamePixmapItem.html#a69485ef3e5b7a171af1526ceaef64f3a',1,'GamePixmapItem']]],
+  ['tintchanged_351',['tintChanged',['../classGamePixmapItem.html#a94eee366b90db900d90c05d4a7703306',1,'GamePixmapItem']]],
+  ['to_5fchar_352',['TO_CHAR',['../textrenderer_8cpp.html#a8579f2aaa99af90d8072056b47cdb433',1,'textrenderer.cpp']]],
+  ['togglepause_353',['togglePause',['../classGameWindow.html#a4d3e4c726e1e86d7ba279ee0fea31775',1,'GameWindow']]],
+  ['topleft_354',['TopLeft',['../namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0ab32beb056fbfe36afbabc6c88c81ab36',1,'_pub']]],
+  ['topright_355',['TopRight',['../namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0a1d85a557894c340c318493f33bfa8efb',1,'_pub']]],
+  ['type_356',['Type',['../namespace__pub.html#a4b113076a0d9baa622ddf9a4e4b35c19aa1fa27779242b4902f7ae3bdd5c6d508',1,'_pub']]]
 ];

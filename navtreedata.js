@@ -25,6 +25,16 @@
 var NAVTREE =
 [
   [ "APT Game", "index.html", [
+    [ "<a href=\"https://nicogutz.github.io/\">APT Game Full Documentation</a>", "index.html", [
+      [ "APT Game Project", "index.html#autotoc_md2", [
+        [ "<a href=\"https://nicogutz.github.io/\">nicogutz.github.io</a>", "index.html#autotoc_md1", null ],
+        [ "Project Summary", "index.html#autotoc_md3", null ],
+        [ "Contributors", "index.html#autotoc_md4", null ],
+        [ "Main Classes", "index.html#autotoc_md5", null ],
+        [ "Game Features Overview", "index.html#autotoc_md6", null ],
+        [ "Weekly Progress Log", "index.html#autotoc_md7", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -62,7 +72,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classHealth.html#abe7ce3300f45e6a5ed8eff34c2812223",
-"namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbba15fee67ef74be4185c16f3dae7b38608"
+"namespace__pub.html#a4b113076a0d9baa622ddf9a4e4b35c19aa1fa27779242b4902f7ae3bdd5c6d508"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

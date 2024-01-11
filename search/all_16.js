@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['zoombyslider_369',['zoomBySlider',['../classGameWindow.html#ab247e56854c469a9515444d296611d33',1,'GameWindow']]],
-  ['zoomcommands_370',['zoomCommands',['../classGameWindow.html#ad8fc48e1fd44f4e7d324ca49385501e7',1,'GameWindow']]]
+  ['view_367',['View',['../classGameController.html#a6bfff5b5f6dc78b5eb805045300aa56a',1,'GameController']]],
+  ['viewcommands_368',['viewCommands',['../classGameWindow.html#a4651c25c366e322564a7b2311aee1e85',1,'GameWindow']]],
+  ['visited_369',['visited',['../structNode.html#aa1bdec4e775fc578632e6a2dced9e251',1,'Node']]]
 ];
