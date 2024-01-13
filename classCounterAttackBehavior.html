@@ -98,10 +98,10 @@ Inheritance diagram for CounterAttackBehavior:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCounterAttackBehavior__inherit__graph.png" border="0" usemap="#aCounterAttackBehavior_inherit__map" alt="Inheritance graph"/></div>
 <map name="aCounterAttackBehavior_inherit__map" id="aCounterAttackBehavior_inherit__map">
-<area shape="rect" title="The CounterAttackBehavior class extends the GenericAttackBehavior so that the owner attacks back afte..." alt="" coords="29,895,217,1060"/>
-<area shape="rect" href="classGenericAttackBehavior.html" title="The GenericAttackBehavior class handles the basic actions of a class that can attack or be attacked." alt="" coords="24,564,223,847"/>
-<area shape="rect" href="classAttack.html" title="The Attack interface handles all the actions related to attacking and getting attacked." alt="" coords="5,219,241,516"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,218,171"/>
+<area shape="rect" title="The CounterAttackBehavior class extends the GenericAttackBehavior so that the owner attacks back afte..." alt="" coords="29,1012,217,1177"/>
+<area shape="rect" href="classGenericAttackBehavior.html" title="The GenericAttackBehavior class handles the basic actions of a class that can attack or be attacked." alt="" coords="24,681,223,964"/>
+<area shape="rect" href="classAttack.html" title="The Attack interface handles all the actions related to attacking and getting attacked." alt="" coords="5,277,241,633"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,218,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -164,6 +164,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classCounterAttackBehavior.html" title="The CounterAttackBehavior class extends the GenericAttackBehavior so that the owner attacks back afte...">CounterAttackBehavior</a> class extends the <a class="el" href="classGenericAttackBehavior.html" title="The GenericAttackBehavior class handles the basic actions of a class that can attack or be attacked.">GenericAttackBehavior</a> so that the owner attacks back after being attacked. </p>
+
+<p class="definition">Definition at line <a class="el" href="counterattackbehavior_8h_source.html#l00009">9</a> of file <a class="el" href="counterattackbehavior_8h_source.html">counterattackbehavior.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4eb4c18f32a17b8b41b602db5d4416cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4eb4c18f32a17b8b41b602db5d4416cf">&#9670;&nbsp;</a></span>CounterAttackBehavior()</h2>
@@ -196,9 +198,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classGenericAttackBehavior.html#afd436666b7bb1334bfaa7ff1a8966028">GenericAttackBehavior</a>(owner) {};</div>
-<div class="ttc" id="aclassGenericAttackBehavior_html_afd436666b7bb1334bfaa7ff1a8966028"><div class="ttname"><a href="classGenericAttackBehavior.html#afd436666b7bb1334bfaa7ff1a8966028">GenericAttackBehavior::GenericAttackBehavior</a></div><div class="ttdeci">GenericAttackBehavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="counterattackbehavior_8h_source.html#l00015">15</a> of file <a class="el" href="counterattackbehavior_8h_source.html">counterattackbehavior.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -247,31 +249,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>strength of the attack given. </dd></dl>
 
 <p>Implements <a class="el" href="classAttack.html#aa256ee1d560a29116883e67b329d74ff">Attack</a>.</p>
-<div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                                                                                       {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="comment">// This is neat, the opposite angle is the angle + 180,</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="comment">// modulo 360 makes sure it is always smaller than 360 deg.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">int</span> direction = target-&gt;getData(<a class="code" href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">DataRole::Direction</a>).toInt();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> newDirection = (180 + direction) % 360;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// Move to where you got attacked and counter attack.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span>(direction - newDirection) {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(<a class="code" href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">DataRole::Direction</a>, newDirection);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classGenericAttackBehavior.html#a619f4febb3487333cfe3c1f490236b2f">GenericAttackBehavior::attack</a>(target);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// Process the attack. This does mean enemies attack first when hit by an enemy but it is not noticeable.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGenericAttackBehavior.html#a8e5161bf144a0797c77c0f2082e1fad1">GenericAttackBehavior::getAttacked</a>(target, strenght);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="aclassGenericAttackBehavior_html_a619f4febb3487333cfe3c1f490236b2f"><div class="ttname"><a href="classGenericAttackBehavior.html#a619f4febb3487333cfe3c1f490236b2f">GenericAttackBehavior::attack</a></div><div class="ttdeci">int attack() override</div><div class="ttdoc">attack overloaded, attacks on the current direction the owner is facing.</div><div class="ttdef"><b>Definition:</b> genericattackbehavior.cpp:37</div></div>
-<div class="ttc" id="aclassGenericAttackBehavior_html_a8e5161bf144a0797c77c0f2082e1fad1"><div class="ttname"><a href="classGenericAttackBehavior.html#a8e5161bf144a0797c77c0f2082e1fad1">GenericAttackBehavior::getAttacked</a></div><div class="ttdeci">int getAttacked(const QPointer&lt; GameObject &gt; &amp;by, int strength) override</div><div class="ttdoc">getAttacked handles the attack by decreasing the health of the object if it has it.</div><div class="ttdef"><b>Definition:</b> genericattackbehavior.cpp:41</div></div>
-<div class="ttc" id="anamespace__pub_html_aceb36dd0edefc86835061a00052d3ae0"><div class="ttname"><a href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">_pub::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> publicenums.h:46</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="counterattackbehavior_8cpp_source.html#l00003">3</a> of file <a class="el" href="counterattackbehavior_8cpp_source.html">counterattackbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/attack/<a class="el" href="counterattackbehavior_8h_source.html">counterattackbehavior.h</a></li>
-<li>model/behaviors/concrete/attack/<a class="el" href="counterattackbehavior_8cpp.html">counterattackbehavior.cpp</a></li>
+<li>model/behaviors/concrete/attack/<a class="el" href="counterattackbehavior_8cpp_source.html">counterattackbehavior.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

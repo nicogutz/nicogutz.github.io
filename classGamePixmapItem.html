@@ -221,6 +221,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> class is the custom child class of <a class="el" href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a>. to define and store animations. It inherits from <a class="el" href="classQObject.html">QObject</a> as to make it dynamic. </p>
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00015">15</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f0eb98ed264b198e5c564666428c4c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f0eb98ed264b198e5c564666428c4c5">&#9670;&nbsp;</a></span>GamePixmapItem()</h2>
@@ -246,15 +248,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classGamePixmapItem.html" title="The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...">GamePixmapItem</a> constructor which also initializes m_animationGroup. </p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="classQObject.html">QObject</a>()</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        , <a class="code" href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a>() {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a> = <span class="keyword">new</span> QParallelAnimationGroup;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a>-&gt;setParent(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a21049d5884d6fdd0b10c2fea76e415ab"><div class="ttname"><a href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">GamePixmapItem::m_animationGroup</a></div><div class="ttdeci">QPointer&lt; QParallelAnimationGroup &gt; m_animationGroup</div><div class="ttdoc">m_animationGroup stores every animation.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:145</div></div>
-<div class="ttc" id="aclassQGraphicsPixmapItem_html"><div class="ttname"><a href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a></div></div>
-<div class="ttc" id="aclassQObject_html"><div class="ttname"><a href="classQObject.html">QObject</a></div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00029">29</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -281,15 +277,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                               {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    animation-&gt;setTargetObject(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a>-&gt;addAnimation(animation);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    animation-&gt;start();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a>-&gt;state() == QAnimationGroup::State::Stopped) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a>-&gt;start();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00063">63</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a610cda52bfab35fc2bf2a7a4cb1fb669"></a>
@@ -309,10 +299,9 @@ Private Attributes</h2></td></tr>
 
 <p>animationGroup. </p>
 <dl class="section return"><dt>Returns</dt><dd>current animation group. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                             {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#a21049d5884d6fdd0b10c2fea76e415ab">m_animationGroup</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00072">72</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ac8e7606276c5bf83b891db9f15f706d3"></a>
@@ -332,11 +321,9 @@ Private Attributes</h2></td></tr>
 
 <p>frame is m_frame getter. </p>
 <dl class="section return"><dt>Returns</dt><dd>m_frame which is the current frame visualized. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                   {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">m_frame</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_aeffbb352b39cac72a5bec0e8821dc79a"><div class="ttname"><a href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">GamePixmapItem::m_frame</a></div><div class="ttdeci">QPoint m_frame</div><div class="ttdoc">m_frame The selected frame, sprites can have more than one row.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:133</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00123">123</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a1d015290515c49f04d82da21008b43fc"></a>
@@ -381,11 +368,9 @@ Private Attributes</h2></td></tr>
 
 <p>frameDimension gets m_frameDimension. </p>
 <dl class="section return"><dt>Returns</dt><dd>m_frameDimension. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                           {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a78edb03d0700cfbfc5b22b39fb3cf3e8"><div class="ttname"><a href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">GamePixmapItem::m_frameDimension</a></div><div class="ttdeci">QSize m_frameDimension</div><div class="ttdoc">m_frameDimension The size of a single frame.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:129</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00112">112</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af0c0f67fa3c11644c2785146dad4441d"></a>
@@ -430,11 +415,9 @@ Private Attributes</h2></td></tr>
 
 <p>getTint is m_tint getter. </p>
 <dl class="section return"><dt>Returns</dt><dd>m_tint. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                     {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#a860182fc1bbea1d8aadd09e667929379">m_tint</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a860182fc1bbea1d8aadd09e667929379"><div class="ttname"><a href="classGamePixmapItem.html#a860182fc1bbea1d8aadd09e667929379">GamePixmapItem::m_tint</a></div><div class="ttdeci">QColor m_tint</div><div class="ttdoc">m_tint The tint of the overlay.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:125</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00008">8</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a4f6970c37e939d691bf0b7ad1b4967db"></a>
@@ -504,11 +487,9 @@ Private Attributes</h2></td></tr>
 
 <p>scaling. </p>
 <dl class="section return"><dt>Returns</dt><dd>current scaling of the pixmap. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                      {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#a199acead8362c48106a201c8cd2cb531">m_scaling</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a199acead8362c48106a201c8cd2cb531"><div class="ttname"><a href="classGamePixmapItem.html#a199acead8362c48106a201c8cd2cb531">GamePixmapItem::m_scaling</a></div><div class="ttdeci">QPointF m_scaling</div><div class="ttdoc">m_scaling stores the current scaling of the sprite.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:141</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00076">76</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="abe767be091b1949b5eea04ad020172fa"></a>
@@ -559,17 +540,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                             {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">m_frame</a> == newFrame) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">m_frame</a> = newFrame;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classGamePixmapItem.html#a6ffde2f175d755ab064d3e9ca378db1f">updatePixmap</a>();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    emit <a class="code" href="classGamePixmapItem.html#a1d015290515c49f04d82da21008b43fc">frameChanged</a>();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a1d015290515c49f04d82da21008b43fc"><div class="ttname"><a href="classGamePixmapItem.html#a1d015290515c49f04d82da21008b43fc">GamePixmapItem::frameChanged</a></div><div class="ttdeci">void frameChanged()</div></div>
-<div class="ttc" id="aclassGamePixmapItem_html_a6ffde2f175d755ab064d3e9ca378db1f"><div class="ttname"><a href="classGamePixmapItem.html#a6ffde2f175d755ab064d3e9ca378db1f">GamePixmapItem::updatePixmap</a></div><div class="ttdeci">void updatePixmap()</div><div class="ttdoc">updatePixmap updates pixmap to new dimensions.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.cpp:86</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00127">127</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a859181cbe7eadc1eab9aadec0085a167"></a>
@@ -595,14 +568,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                                     {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a> == newFrameDimension)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a> = newFrameDimension;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    emit <a class="code" href="classGamePixmapItem.html#af0c0f67fa3c11644c2785146dad4441d">frameDimensionChanged</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_af0c0f67fa3c11644c2785146dad4441d"><div class="ttname"><a href="classGamePixmapItem.html#af0c0f67fa3c11644c2785146dad4441d">GamePixmapItem::frameDimensionChanged</a></div><div class="ttdeci">void frameDimensionChanged()</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00116">116</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a89110b65c0cf53d0b8ed7d7b5c97557e"></a>
@@ -628,13 +596,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                  {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classGamePixmapItem.html#a199acead8362c48106a201c8cd2cb531">m_scaling</a> = newScaling;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classGamePixmapItem.html#a6ffde2f175d755ab064d3e9ca378db1f">updatePixmap</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    emit <a class="code" href="classGamePixmapItem.html#abe767be091b1949b5eea04ad020172fa">scalingChanged</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_abe767be091b1949b5eea04ad020172fa"><div class="ttname"><a href="classGamePixmapItem.html#abe767be091b1949b5eea04ad020172fa">GamePixmapItem::scalingChanged</a></div><div class="ttdeci">void scalingChanged()</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00080">80</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a43e3cfabe98a96d2f894ce252a8f9db2"></a>
@@ -660,19 +624,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                               {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#a8ed33ab7476322817db46de0f963c091">m_sprite</a> == newSprite)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>.isEmpty()) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a> = newSprite.size();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classGamePixmapItem.html#a8ed33ab7476322817db46de0f963c091">m_sprite</a> = newSprite;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    emit <a class="code" href="classGamePixmapItem.html#a9f955965705b6fb77ee0b871fc03168c">spriteChanged</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a8ed33ab7476322817db46de0f963c091"><div class="ttname"><a href="classGamePixmapItem.html#a8ed33ab7476322817db46de0f963c091">GamePixmapItem::m_sprite</a></div><div class="ttdeci">QImage m_sprite</div><div class="ttdoc">m_sprite stores the current sprite.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:137</div></div>
-<div class="ttc" id="aclassGamePixmapItem_html_a9f955965705b6fb77ee0b871fc03168c"><div class="ttname"><a href="classGamePixmapItem.html#a9f955965705b6fb77ee0b871fc03168c">GamePixmapItem::spriteChanged</a></div><div class="ttdeci">void spriteChanged()</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00101">101</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="aadf7716dd6dc5bd3f4d0730961a9fb33"></a>
@@ -698,16 +652,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classGamePixmapItem.html#a860182fc1bbea1d8aadd09e667929379">m_tint</a> == newTint)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classGamePixmapItem.html#a860182fc1bbea1d8aadd09e667929379">m_tint</a> = newTint;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classGamePixmapItem.html#abbff5eb6894586159d09eab0419f1ac1">updateOverlay</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    emit <a class="code" href="classGamePixmapItem.html#a94eee366b90db900d90c05d4a7703306">tintChanged</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a94eee366b90db900d90c05d4a7703306"><div class="ttname"><a href="classGamePixmapItem.html#a94eee366b90db900d90c05d4a7703306">GamePixmapItem::tintChanged</a></div><div class="ttdeci">void tintChanged()</div></div>
-<div class="ttc" id="aclassGamePixmapItem_html_abbff5eb6894586159d09eab0419f1ac1"><div class="ttname"><a href="classGamePixmapItem.html#abbff5eb6894586159d09eab0419f1ac1">GamePixmapItem::updateOverlay</a></div><div class="ttdeci">void updateOverlay()</div><div class="ttdoc">updateOverlay updates overlay to new color.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.cpp:34</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00026">26</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a9bfb6c876ae6dc2cb916ec29894a13e9"></a>
@@ -744,22 +691,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span>(onParent) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">// this will tint the base pixmap.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classGamePixmapItem.html#a6ffde2f175d755ab064d3e9ca378db1f">updatePixmap</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">auto</span> pixmap = this-&gt;pixmap();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        QPainter painter(&amp;pixmap);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        painter.fillRect(QRect(QPoint(0, 0), pixmap.size()), newTint);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        painter.setCompositionMode(QPainter::CompositionMode_SoftLight);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        painter.drawPixmap(QPoint(0, 0), pixmap);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        this-&gt;setPixmap(pixmap);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classGamePixmapItem.html#aadf7716dd6dc5bd3f4d0730961a9fb33">setTint</a>(newTint);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="ttc" id="aclassGamePixmapItem_html_aadf7716dd6dc5bd3f4d0730961a9fb33"><div class="ttname"><a href="classGamePixmapItem.html#aadf7716dd6dc5bd3f4d0730961a9fb33">GamePixmapItem::setTint</a></div><div class="ttdeci">void setTint(const QColor &amp;newTint)</div><div class="ttdoc">setTint sets tint on the pixmap of the size CELL_SIZE^2.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.cpp:26</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00011">11</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a7818f5773ba24e290d2d6a70ea4df8c6"></a>
@@ -779,10 +713,9 @@ Private Attributes</h2></td></tr>
 
 <p>sprite gets the m_sprite. </p>
 <dl class="section return"><dt>Returns</dt><dd>m_sprite. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classGamePixmapItem.html#a8ed33ab7476322817db46de0f963c091">m_sprite</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00097">97</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a9f955965705b6fb77ee0b871fc03168c"></a>
@@ -851,36 +784,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>updateOverlay updates overlay to new color. </p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                   {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Some things require an overlay so the color can turn back to normal once the animation is over.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QPixmap currentPixmap = this-&gt;pixmap();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QPixmap overlay(currentPixmap.size());</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    overlay.fill(Qt::transparent);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QPainter painter(&amp;overlay);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    painter.setClipRegion(QRegion(currentPixmap.mask()));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    painter.setCompositionMode(QPainter::CompositionMode_Overlay);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    painter.fillRect(overlay.rect(), <a class="code" href="classGamePixmapItem.html#a860182fc1bbea1d8aadd09e667929379">m_tint</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    painter.end();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">auto</span> children = this-&gt;childItems();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a> *child = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(!children.empty()) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;obj : children) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(obj-&gt;data((<span class="keywordtype">int</span>)DataRole::Type).value&lt;<a class="code" href="namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbb">ObjectType</a>&gt;() == ObjectType::Overlay) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(child == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        child = <span class="keyword">new</span> <a class="code" href="classQGraphicsPixmapItem.html">QGraphicsPixmapItem</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        child-&gt;setData((<span class="keywordtype">int</span>)DataRole::Type, QVariant::fromValue&lt;ObjectType&gt;(ObjectType::Overlay));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    child-&gt;setParentItem(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    child-&gt;setPixmap(overlay);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="ttc" id="anamespace__pub_html_aa1125206fd6742212fbe0423e12c9dbb"><div class="ttname"><a href="namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbb">_pub::ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdef"><b>Definition:</b> publicenums.h:6</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00034">34</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a6ffde2f175d755ab064d3e9ca378db1f"></a>
@@ -899,19 +805,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>updatePixmap updates pixmap to new dimensions. </p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                  {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> x = <a class="code" href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">m_frame</a>.x() * <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>.width();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> y = <a class="code" href="classGamePixmapItem.html#aeffbb352b39cac72a5bec0e8821dc79a">m_frame</a>.y() * <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>.height();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QImage <a class="code" href="classGamePixmapItem.html#a79814c2db529d9d58a7d4ec0dadb2d69">frame</a> = <a class="code" href="classGamePixmapItem.html#a8ed33ab7476322817db46de0f963c091">m_sprite</a>.copy(x, y, <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>.width(), <a class="code" href="classGamePixmapItem.html#a78edb03d0700cfbfc5b22b39fb3cf3e8">m_frameDimension</a>.height());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">auto</span> sc = QPoint(1, 1) - (<a class="code" href="classGamePixmapItem.html#a199acead8362c48106a201c8cd2cb531">m_scaling</a> / 10);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    this-&gt;setPixmap(QPixmap::fromImage(<a class="code" href="classGamePixmapItem.html#a79814c2db529d9d58a7d4ec0dadb2d69">frame</a>).scaled(<a class="code" href="classGamePixmapItem.html#a55ee2f6b00e6ded290c834c419986c38">CELL_SIZE</a> * sc.x(), <a class="code" href="classGamePixmapItem.html#a55ee2f6b00e6ded290c834c419986c38">CELL_SIZE</a> * sc.y(),</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                     Qt::IgnoreAspectRatio, Qt::SmoothTransformation));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="aclassGamePixmapItem_html_a55ee2f6b00e6ded290c834c419986c38"><div class="ttname"><a href="classGamePixmapItem.html#a55ee2f6b00e6ded290c834c419986c38">GamePixmapItem::CELL_SIZE</a></div><div class="ttdeci">static constexpr int CELL_SIZE</div><div class="ttdoc">CELL_SIZE constant cell size.</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:115</div></div>
-<div class="ttc" id="aclassGamePixmapItem_html_a79814c2db529d9d58a7d4ec0dadb2d69"><div class="ttname"><a href="classGamePixmapItem.html#a79814c2db529d9d58a7d4ec0dadb2d69">GamePixmapItem::frame</a></div><div class="ttdeci">QPoint frame</div><div class="ttdef"><b>Definition:</b> gamepixmapitem.h:20</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8cpp_source.html#l00086">86</a> of file <a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -937,6 +833,8 @@ Private Attributes</h2></td></tr>
 
 <p>CELL_SIZE constant cell size. </p>
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00115">115</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="a21049d5884d6fdd0b10c2fea76e415ab"></a>
@@ -960,6 +858,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>m_animationGroup stores every animation. </p>
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00145">145</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 
 </div>
 </div>
@@ -985,6 +885,8 @@ Private Attributes</h2></td></tr>
 
 <p>m_frame The selected frame, sprites can have more than one row. </p>
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00133">133</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="a78edb03d0700cfbfc5b22b39fb3cf3e8"></a>
@@ -1008,6 +910,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>m_frameDimension The size of a single frame. </p>
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00129">129</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 
 </div>
 </div>
@@ -1033,6 +937,8 @@ Private Attributes</h2></td></tr>
 
 <p>m_opacity Opacity of the base QPixmap. </p>
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00121">121</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="a199acead8362c48106a201c8cd2cb531"></a>
@@ -1056,6 +962,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>m_scaling stores the current scaling of the sprite. </p>
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00141">141</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 
 </div>
 </div>
@@ -1081,6 +989,8 @@ Private Attributes</h2></td></tr>
 
 <p>m_sprite stores the current sprite. </p>
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00137">137</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="a860182fc1bbea1d8aadd09e667929379"></a>
@@ -1105,6 +1015,8 @@ Private Attributes</h2></td></tr>
 
 <p>m_tint The tint of the overlay. </p>
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00125">125</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -1128,6 +1040,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00001">1</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="aa07e0f1caf139d6a5f8b07154ddd35e8"></a>
@@ -1149,6 +1063,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00001">1</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 
 </div>
 </div>
@@ -1172,6 +1088,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00001">1</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <a id="aa83c6ffeb3d3ad27dd758ebdcde76d88"></a>
@@ -1193,6 +1111,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00001">1</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
 
 </div>
 </div>
@@ -1216,11 +1136,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="gamepixmapitem_8h_source.html#l00001">1</a> of file <a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>view/<a class="el" href="gamepixmapitem_8h_source.html">gamepixmapitem.h</a></li>
-<li>view/<a class="el" href="gamepixmapitem_8cpp.html">gamepixmapitem.cpp</a></li>
+<li>view/<a class="el" href="gamepixmapitem_8cpp_source.html">gamepixmapitem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

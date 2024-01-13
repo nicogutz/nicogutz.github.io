@@ -98,10 +98,10 @@ Inheritance diagram for PoisonOnStepBehavior:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPoisonOnStepBehavior__inherit__graph.png" border="0" usemap="#aPoisonOnStepBehavior_inherit__map" alt="Inheritance graph"/></div>
 <map name="aPoisonOnStepBehavior_inherit__map" id="aPoisonOnStepBehavior_inherit__map">
-<area shape="rect" title="The PoisonOnStepBehavior class makes the object poison the source if it has any poison." alt="" coords="14,792,215,972"/>
-<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="13,579,217,744"/>
-<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="5,219,224,531"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="20,5,209,171"/>
+<area shape="rect" title="The PoisonOnStepBehavior class makes the object poison the source if it has any poison." alt="" coords="14,851,215,1031"/>
+<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="13,637,217,803"/>
+<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="5,277,224,589"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="20,5,209,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -163,6 +163,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classPoisonOnStepBehavior.html" title="The PoisonOnStepBehavior class makes the object poison the source if it has any poison.">PoisonOnStepBehavior</a> class makes the object poison the source if it has any poison. </p>
+
+<p class="definition">Definition at line <a class="el" href="poisononstepbehavior_8h_source.html#l00009">9</a> of file <a class="el" href="poisononstepbehavior_8h_source.html">poisononstepbehavior.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a32b2b3f34d5231bd7af72ee25635f9ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32b2b3f34d5231bd7af72ee25635f9ec">&#9670;&nbsp;</a></span>PoisonOnStepBehavior() <span class="overload">[1/2]</span></h2>
@@ -195,9 +197,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classGenericWalkableBehavior.html#ac27822080797e571ff14ca862dab37f9">GenericWalkableBehavior</a>(owner) {};</div>
-<div class="ttc" id="aclassGenericWalkableBehavior_html_ac27822080797e571ff14ca862dab37f9"><div class="ttname"><a href="classGenericWalkableBehavior.html#ac27822080797e571ff14ca862dab37f9">GenericWalkableBehavior::GenericWalkableBehavior</a></div><div class="ttdeci">GenericWalkableBehavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poisononstepbehavior_8h_source.html#l00015">15</a> of file <a class="el" href="poisononstepbehavior_8h_source.html">poisononstepbehavior.h</a>.</p>
+
 </div>
 </div>
 <a id="adcc4074c49cd5b032261da1d246ca5bf"></a>
@@ -260,20 +262,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>result of <a class="el" href="classMovement.html#ad26a44d2e3a8c05b1b57071210c8cd68" title="getSeppedOn handles the source stepping on the owner.">GenericWalkableBehavior::getSteppedOn</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classMovement.html#ad26a44d2e3a8c05b1b57071210c8cd68">Movement</a>.</p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                                                          {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="comment">// Mostly for tiles, since they keep poison and pass it on to the protagonist.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getBehavior&lt;<a class="code" href="classPoison.html">Poison</a>&gt;()-&gt;poison(source);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classMovement.html#ad26a44d2e3a8c05b1b57071210c8cd68">GenericWalkableBehavior::getSteppedOn</a>(source);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="aclassMovement_html_ad26a44d2e3a8c05b1b57071210c8cd68"><div class="ttname"><a href="classMovement.html#ad26a44d2e3a8c05b1b57071210c8cd68">Movement::getSteppedOn</a></div><div class="ttdeci">virtual bool getSteppedOn(const QPointer&lt; GameObject &gt; &amp;source)</div><div class="ttdoc">getSeppedOn handles the source stepping on the owner.</div><div class="ttdef"><b>Definition:</b> movement.h:68</div></div>
-<div class="ttc" id="aclassPoison_html"><div class="ttname"><a href="classPoison.html">Poison</a></div><div class="ttdoc">The Poison class is an abstract class that handles poison actions.</div><div class="ttdef"><b>Definition:</b> poison.h:12</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poisononstepbehavior_8cpp_source.html#l00005">5</a> of file <a class="el" href="poisononstepbehavior_8cpp_source.html">poisononstepbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/movement/<a class="el" href="poisononstepbehavior_8h_source.html">poisononstepbehavior.h</a></li>
-<li>model/behaviors/concrete/movement/<a class="el" href="poisononstepbehavior_8cpp.html">poisononstepbehavior.cpp</a></li>
+<li>model/behaviors/concrete/movement/<a class="el" href="poisononstepbehavior_8cpp_source.html">poisononstepbehavior.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

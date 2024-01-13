@@ -100,11 +100,11 @@ Inheritance diagram for Health:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHealth__inherit__graph.png" border="0" usemap="#aHealth_inherit__map" alt="Inheritance graph"/></div>
 <map name="aHealth_inherit__map" id="aHealth_inherit__map">
-<area shape="rect" title="The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ..." alt="" coords="92,219,329,472"/>
-<area shape="rect" href="classGenericHealingBehavior.html" title="The GenericHealingBehavior class handles behavior of objects that heal others." alt="" coords="5,520,200,700"/>
-<area shape="rect" href="classGenericHealthBehavior.html" title="The GenericHealthBehavior class sets the basic actions to change an objects health and death." alt="" coords="225,520,413,700"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="116,5,305,171"/>
-<area shape="rect" href="classPoisonOnKilledBehavior.html" title="The PoisonOnKilledBehavior class triggers the poisoning of neighbors when object dies...." alt="" coords="209,748,428,957"/>
+<area shape="rect" title="The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ..." alt="" coords="92,277,329,531"/>
+<area shape="rect" href="classGenericHealingBehavior.html" title="The GenericHealingBehavior class handles behavior of objects that heal others." alt="" coords="5,579,200,759"/>
+<area shape="rect" href="classGenericHealthBehavior.html" title="The GenericHealthBehavior class sets the basic actions to change an objects health and death." alt="" coords="225,579,413,759"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="116,5,305,229"/>
+<area shape="rect" href="classPoisonOnKilledBehavior.html" title="The PoisonOnKilledBehavior class triggers the poisoning of neighbors when object dies...." alt="" coords="209,807,428,1016"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -158,6 +158,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classHealth.html" title="The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ...">Health</a> class is an abstract class that handles health behaviors. This class is abstract to avoid repeating the same things for all the behaviors that extend it. Most objects that have health do not have all the actions. For example, enemies do not heal but they need to get their health decreased through attacks. </p>
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00014">14</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa24527c105cd32770324ff26a78f021d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa24527c105cd32770324ff26a78f021d">&#9670;&nbsp;</a></span>Health() <span class="overload">[1/2]</span></h2>
@@ -190,9 +192,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        : <a class="code" href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior</a>(owner) {};</div>
-<div class="ttc" id="aclassBehavior_html_aab6b9945e55735c64af699fef74b23cf"><div class="ttname"><a href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior::Behavior</a></div><div class="ttdeci">Behavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00020">20</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
+
 </div>
 </div>
 <a id="ab93e9d9ae81196519765e03a748bbfe3"></a>
@@ -242,8 +244,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8cpp_source.html#l00002">2</a> of file <a class="el" href="health_8cpp_source.html">health.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -273,10 +276,9 @@ Additional Inherited Members</h2></td></tr>
 <p>die handles the death of the owner </p>
 
 <p>Reimplemented in <a class="el" href="classPoisonOnKilledBehavior.html#ab8bd38d0c03bb7d73d07892a42e8e7cd">PoisonOnKilledBehavior</a>, and <a class="el" href="classGenericHealthBehavior.html#a38f1fd00edbe71b56805a93283a797dc">GenericHealthBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                       {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00063">63</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
+
 </div>
 </div>
 <a id="a5b64418057c4aa2c5b53f4671c8b9433"></a>
@@ -313,10 +315,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>amount of health changed. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericHealthBehavior.html#ac04d2b1978cccd56a4985efd5df51c64">GenericHealthBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                             {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00056">56</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
+
 </div>
 </div>
 <a id="a94f3395c37c1cbe938be776fd62bdbae"></a>
@@ -353,10 +354,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>amount healed. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericHealingBehavior.html#a878308dcc22196c03615a72a93e65a08">GenericHealingBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                         {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00048">48</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
+
 </div>
 </div>
 <a id="abe7ce3300f45e6a5ed8eff34c2812223"></a>
@@ -382,10 +382,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                      {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="health_8h_source.html#l00026">26</a> of file <a class="el" href="health_8h_source.html">health.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -413,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/<a class="el" href="health_8h_source.html">health.h</a></li>
-<li>model/behaviors/<a class="el" href="health_8cpp.html">health.cpp</a></li>
+<li>model/behaviors/<a class="el" href="health_8cpp_source.html">health.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

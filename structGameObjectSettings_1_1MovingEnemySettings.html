@@ -106,6 +106,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings for MovingEnemy <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="gameobjectsettings_8h_source.html#l00156">156</a> of file <a class="el" href="gameobjectsettings_8h_source.html">gameobjectsettings.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae2951dba9c8aaf5e28856357aa0970a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2951dba9c8aaf5e28856357aa0970a5">&#9670;&nbsp;</a></span>setObject()</h2>
@@ -138,19 +140,9 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                               {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a666684b0e530b29a54005d9269b9357d">setData</a>(<a class="code" href="structGameObjectSettings_1_1MovingEnemySettings.html#a2d59f1293be9f2002f5abb794147b3b6">defaultData</a>);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classAttack.html">Attack</a>&gt;(QSharedPointer&lt;CounterAttackBehavior&gt;::create(obj));</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classHealth.html">Health</a>&gt;(QSharedPointer&lt;GenericHealthBehavior&gt;::create(obj));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            obj-&gt;<a class="code" href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">setBehavior</a>&lt;<a class="code" href="classMovement.html">Movement</a>&gt;(QSharedPointer&lt;RandomMovementBehavior&gt;::create(obj));</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        };</div>
-<div class="ttc" id="aclassAttack_html"><div class="ttname"><a href="classAttack.html">Attack</a></div><div class="ttdoc">The Attack interface handles all the actions related to attacking and getting attacked.</div><div class="ttdef"><b>Definition:</b> attack.h:11</div></div>
-<div class="ttc" id="aclassGameObject_html_a0ad9e839d13e9da54793255e6b2fc8c8"><div class="ttname"><a href="classGameObject.html#a0ad9e839d13e9da54793255e6b2fc8c8">GameObject::setBehavior</a></div><div class="ttdeci">void setBehavior(QSharedPointer&lt; T &gt; behavior)</div><div class="ttdoc">Sets a behavior for the GameObject.</div><div class="ttdef"><b>Definition:</b> gameobject.h:106</div></div>
-<div class="ttc" id="aclassGameObject_html_a666684b0e530b29a54005d9269b9357d"><div class="ttname"><a href="classGameObject.html#a666684b0e530b29a54005d9269b9357d">GameObject::setData</a></div><div class="ttdeci">void setData(DataRole role, QVariant value)</div><div class="ttdoc">Sets data for a specific role.</div><div class="ttdef"><b>Definition:</b> gameobject.cpp:57</div></div>
-<div class="ttc" id="aclassHealth_html"><div class="ttname"><a href="classHealth.html">Health</a></div><div class="ttdoc">The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ...</div><div class="ttdef"><b>Definition:</b> health.h:14</div></div>
-<div class="ttc" id="aclassMovement_html"><div class="ttname"><a href="classMovement.html">Movement</a></div><div class="ttdoc">The Movement class handles the actions of moving. It is an abstract class. All the functions return f...</div><div class="ttdef"><b>Definition:</b> movement.h:18</div></div>
-<div class="ttc" id="astructGameObjectSettings_1_1MovingEnemySettings_html_a2d59f1293be9f2002f5abb794147b3b6"><div class="ttname"><a href="structGameObjectSettings_1_1MovingEnemySettings.html#a2d59f1293be9f2002f5abb794147b3b6">GameObjectSettings::MovingEnemySettings::defaultData</a></div><div class="ttdeci">static const QList&lt; QPair&lt; DataRole, QVariant &gt; &gt; defaultData</div><div class="ttdef"><b>Definition:</b> gameobjectsettings.h:157</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="gameobjectsettings_8h_source.html#l00168">168</a> of file <a class="el" href="gameobjectsettings_8h_source.html">gameobjectsettings.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -180,10 +172,12 @@ Static Public Attributes</h2></td></tr>
 <div class="line">          {DataRole::Energy, <a class="code" href="structMovement_1_1SETTINGS.html#a5bfd2645de28427ed05b532bef14a4c0">Movement::SETTINGS::MAX_ENERGY</a> * 10},</div>
 <div class="line"> </div>
 <div class="line">        }</div>
-<div class="ttc" id="astructAttack_1_1SETTINGS_html_a312cbfa3dd810c7c2554d5c0e49809f7"><div class="ttname"><a href="structAttack_1_1SETTINGS.html#a312cbfa3dd810c7c2554d5c0e49809f7">Attack::SETTINGS::ENEMY_STRENGTH</a></div><div class="ttdeci">static constexpr int ENEMY_STRENGTH</div><div class="ttdoc">These decide the upper range for the attack strength randint.</div><div class="ttdef"><b>Definition:</b> attack.h:34</div></div>
-<div class="ttc" id="astructHealth_1_1SETTINGS_html_aac94cc993d54a8e488dc4a64ffebf78f"><div class="ttname"><a href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">Health::SETTINGS::MAX_HEALTH</a></div><div class="ttdeci">static constexpr int MAX_HEALTH</div><div class="ttdef"><b>Definition:</b> health.h:33</div></div>
-<div class="ttc" id="astructMovement_1_1SETTINGS_html_a5bfd2645de28427ed05b532bef14a4c0"><div class="ttname"><a href="structMovement_1_1SETTINGS.html#a5bfd2645de28427ed05b532bef14a4c0">Movement::SETTINGS::MAX_ENERGY</a></div><div class="ttdeci">static constexpr int MAX_ENERGY</div><div class="ttdoc">Max energy for a GameObject.</div><div class="ttdef"><b>Definition:</b> movement.h:37</div></div>
+<div class="ttc" id="astructAttack_1_1SETTINGS_html_a312cbfa3dd810c7c2554d5c0e49809f7"><div class="ttname"><a href="structAttack_1_1SETTINGS.html#a312cbfa3dd810c7c2554d5c0e49809f7">Attack::SETTINGS::ENEMY_STRENGTH</a></div><div class="ttdeci">static constexpr int ENEMY_STRENGTH</div><div class="ttdoc">These decide the upper range for the attack strength randint.</div><div class="ttdef"><b>Definition:</b> <a href="attack_8h_source.html#l00034">attack.h:34</a></div></div>
+<div class="ttc" id="astructHealth_1_1SETTINGS_html_aac94cc993d54a8e488dc4a64ffebf78f"><div class="ttname"><a href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">Health::SETTINGS::MAX_HEALTH</a></div><div class="ttdeci">static constexpr int MAX_HEALTH</div><div class="ttdef"><b>Definition:</b> <a href="health_8h_source.html#l00033">health.h:33</a></div></div>
+<div class="ttc" id="astructMovement_1_1SETTINGS_html_a5bfd2645de28427ed05b532bef14a4c0"><div class="ttname"><a href="structMovement_1_1SETTINGS.html#a5bfd2645de28427ed05b532bef14a4c0">Movement::SETTINGS::MAX_ENERGY</a></div><div class="ttdeci">static constexpr int MAX_ENERGY</div><div class="ttdoc">Max energy for a GameObject.</div><div class="ttdef"><b>Definition:</b> <a href="movement_8h_source.html#l00037">movement.h:37</a></div></div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="gameobjectsettings_8h_source.html#l00157">157</a> of file <a class="el" href="gameobjectsettings_8h_source.html">gameobjectsettings.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

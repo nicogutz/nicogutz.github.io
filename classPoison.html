@@ -100,10 +100,10 @@ Inheritance diagram for Poison:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPoison__inherit__graph.png" border="0" usemap="#aPoison_inherit__map" alt="Inheritance graph"/></div>
 <map name="aPoison_inherit__map" id="aPoison_inherit__map">
-<area shape="rect" title="The Poison class is an abstract class that handles poison actions." alt="" coords="132,219,369,457"/>
-<area shape="rect" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison...." alt="" coords="5,527,248,663"/>
-<area shape="rect" href="classGenericPoisoningBehavior.html" title="The GenericPoisoningBehavior class handles the poison action from an object." alt="" coords="272,505,480,685"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="156,5,345,171"/>
+<area shape="rect" title="The Poison class is an abstract class that handles poison actions." alt="" coords="132,277,369,516"/>
+<area shape="rect" href="classGenericPoisonableBehavior.html" title="The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison...." alt="" coords="5,586,248,722"/>
+<area shape="rect" href="classGenericPoisoningBehavior.html" title="The GenericPoisoningBehavior class handles the poison action from an object." alt="" coords="272,564,480,744"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="156,5,345,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -155,6 +155,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classPoison.html" title="The Poison class is an abstract class that handles poison actions.">Poison</a> class is an abstract class that handles poison actions. </p>
+
+<p class="definition">Definition at line <a class="el" href="poison_8h_source.html#l00012">12</a> of file <a class="el" href="poison_8h_source.html">poison.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3ec5702fdf174df4c2b83b6e02b80da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3ec5702fdf174df4c2b83b6e02b80da">&#9670;&nbsp;</a></span>Poison() <span class="overload">[1/2]</span></h2>
@@ -187,9 +189,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        : <a class="code" href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior</a>(owner) {};</div>
-<div class="ttc" id="aclassBehavior_html_aab6b9945e55735c64af699fef74b23cf"><div class="ttname"><a href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior::Behavior</a></div><div class="ttdeci">Behavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poison_8h_source.html#l00018">18</a> of file <a class="el" href="poison_8h_source.html">poison.h</a>.</p>
+
 </div>
 </div>
 <a id="ad728676e94a47846f3cd4be163452b30"></a>
@@ -239,8 +241,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poison_8cpp_source.html#l00002">2</a> of file <a class="el" href="poison_8cpp_source.html">poison.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -276,27 +279,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>poison gained by object. <a class="el" href="classPoison.html" title="The Poison class is an abstract class that handles poison actions.">Poison</a> gained can be lower than level since there is a MAX_POISON level. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                 {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    QVariant poisonLevel = <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getData(DataRole::PoisonLevel);</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">if</span>(poisonLevel.isNull()) {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;Cannot change poison level of object.&quot;</span>);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    }</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// PEnemies could get poisoned as well, their poison level is much</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// higher than the MAX so it doesn&#39;t matter. Poison for them is &quot;Good&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> newPoison = poisonLevel.toInt() + level;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span>(newPoison &gt; <a class="code" href="classPoison.html#ae183843910d984a7035bf148af3428d8">Settings</a>.<a class="code" href="structPoison_1_1SETTINGS.html#a3dab882ceb47c6c5eb62564ffe8e90f8">MAX_POISON</a>) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        newPoison = <a class="code" href="classPoison.html#ae183843910d984a7035bf148af3428d8">Settings</a>.<a class="code" href="structPoison_1_1SETTINGS.html#a3dab882ceb47c6c5eb62564ffe8e90f8">MAX_POISON</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::PoisonLevel, QVariant(newPoison));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> newPoison - poisonLevel.toInt();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="aclassPoison_html_ae183843910d984a7035bf148af3428d8"><div class="ttname"><a href="classPoison.html#ae183843910d984a7035bf148af3428d8">Poison::Settings</a></div><div class="ttdeci">static const struct Poison::SETTINGS Settings</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a3dab882ceb47c6c5eb62564ffe8e90f8"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a3dab882ceb47c6c5eb62564ffe8e90f8">Poison::SETTINGS::MAX_POISON</a></div><div class="ttdeci">constexpr static int MAX_POISON</div><div class="ttdoc">Max/Min allowed amount of poison for a Game Object to get during gameplay.</div><div class="ttdef"><b>Definition:</b> poison.h:35</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poison_8cpp_source.html#l00004">4</a> of file <a class="el" href="poison_8cpp_source.html">poison.cpp</a>.</p>
+
 </div>
 </div>
 <a id="aeb2711562d4d1e4e042a8bc4c04dddf2"></a>
@@ -322,10 +307,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                      {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poison_8h_source.html#l00023">23</a> of file <a class="el" href="poison_8h_source.html">poison.h</a>.</p>
+
 </div>
 </div>
 <a id="a89e974c3da5fcb867a7cf4903347828f"></a>
@@ -362,10 +346,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>poison amount. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericPoisoningBehavior.html#a7a29d0729e910bbab02dd95cf2b20429">GenericPoisoningBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                           {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="poison_8h_source.html#l00067">67</a> of file <a class="el" href="poison_8h_source.html">poison.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -393,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/<a class="el" href="poison_8h_source.html">poison.h</a></li>
-<li>model/behaviors/<a class="el" href="poison_8cpp.html">poison.cpp</a></li>
+<li>model/behaviors/<a class="el" href="poison_8cpp_source.html">poison.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

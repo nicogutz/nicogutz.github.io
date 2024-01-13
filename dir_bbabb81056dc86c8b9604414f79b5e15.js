@@ -4,10 +4,6 @@ var dir_bbabb81056dc86c8b9604414f79b5e15 =
     [ "colorrenderer.h", "colorrenderer_8h.html", [
       [ "ColorRenderer", "classColorRenderer.html", "classColorRenderer" ]
     ] ],
-    [ "overlayrenderer.cpp", "overlayrenderer_8cpp.html", null ],
-    [ "overlayrenderer.h", "overlayrenderer_8h.html", [
-      [ "OverlayRenderer", "classOverlayRenderer.html", "classOverlayRenderer" ]
-    ] ],
     [ "renderer.cpp", "renderer_8cpp.html", null ],
     [ "renderer.h", "renderer_8h.html", [
       [ "Renderer", "classRenderer.html", "classRenderer" ]

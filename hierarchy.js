@@ -60,7 +60,6 @@ var hierarchy =
     ] ],
     [ "Renderer", "classRenderer.html", [
       [ "ColorRenderer", "classColorRenderer.html", null ],
-      [ "OverlayRenderer", "classOverlayRenderer.html", null ],
       [ "SpriteRenderer", "classSpriteRenderer.html", null ],
       [ "TextRenderer", "classTextRenderer.html", null ]
     ] ],

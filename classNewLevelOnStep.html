@@ -98,10 +98,10 @@ Inheritance diagram for NewLevelOnStep:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNewLevelOnStep__inherit__graph.png" border="0" usemap="#aNewLevelOnStep_inherit__map" alt="Inheritance graph"/></div>
 <map name="aNewLevelOnStep_inherit__map" id="aNewLevelOnStep_inherit__map">
-<area shape="rect" title="The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level." alt="" coords="9,792,220,943"/>
-<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="13,579,217,744"/>
-<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="5,219,224,531"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="20,5,209,171"/>
+<area shape="rect" title="The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level." alt="" coords="9,851,220,1001"/>
+<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="13,637,217,803"/>
+<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="5,277,224,589"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="20,5,209,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -163,6 +163,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classNewLevelOnStep.html" title="The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level.">NewLevelOnStep</a> class handles the stepping on objects that move the protagonist to a new level. </p>
+
+<p class="definition">Definition at line <a class="el" href="newlevelonstep_8h_source.html#l00009">9</a> of file <a class="el" href="newlevelonstep_8h_source.html">newlevelonstep.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afb5f73a017eb33cef340e2c9236e88f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb5f73a017eb33cef340e2c9236e88f2">&#9670;&nbsp;</a></span>NewLevelOnStep() <span class="overload">[1/2]</span></h2>
@@ -195,9 +197,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classGenericWalkableBehavior.html#ac27822080797e571ff14ca862dab37f9">GenericWalkableBehavior</a>(owner) {};</div>
-<div class="ttc" id="aclassGenericWalkableBehavior_html_ac27822080797e571ff14ca862dab37f9"><div class="ttname"><a href="classGenericWalkableBehavior.html#ac27822080797e571ff14ca862dab37f9">GenericWalkableBehavior::GenericWalkableBehavior</a></div><div class="ttdeci">GenericWalkableBehavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="newlevelonstep_8h_source.html#l00015">15</a> of file <a class="el" href="newlevelonstep_8h_source.html">newlevelonstep.h</a>.</p>
+
 </div>
 </div>
 <a id="a169f782df9cc298f785db126ff1ad11a"></a>
@@ -260,27 +262,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classMovement.html#ad26a44d2e3a8c05b1b57071210c8cd68">Movement</a>.</p>
-<div class="fragment"><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <a class="code" href="namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbb">ObjectType</a> srcType = source-&gt;getData(DataRole::Type).value&lt;<a class="code" href="namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbb">ObjectType</a>&gt;();</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordflow">if</span>(srcType == ObjectType::Protagonist) {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="comment">// Does not do anything special, simply checks if the protagonist was the source</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="comment">// and then changes its own direction to be the same as before.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="comment">// This encodes enough info to know where to go next. If the door is Up, it goes one level up.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(<a class="code" href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">DataRole::Direction</a>, <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getData(<a class="code" href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">DataRole::Direction</a>));</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="anamespace__pub_html_aa1125206fd6742212fbe0423e12c9dbb"><div class="ttname"><a href="namespace__pub.html#aa1125206fd6742212fbe0423e12c9dbb">_pub::ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdef"><b>Definition:</b> publicenums.h:6</div></div>
-<div class="ttc" id="anamespace__pub_html_aceb36dd0edefc86835061a00052d3ae0"><div class="ttname"><a href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">_pub::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> publicenums.h:46</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="newlevelonstep_8cpp_source.html#l00002">2</a> of file <a class="el" href="newlevelonstep_8cpp_source.html">newlevelonstep.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/movement/<a class="el" href="newlevelonstep_8h_source.html">newlevelonstep.h</a></li>
-<li>model/behaviors/concrete/movement/<a class="el" href="newlevelonstep_8cpp.html">newlevelonstep.cpp</a></li>
+<li>model/behaviors/concrete/movement/<a class="el" href="newlevelonstep_8cpp_source.html">newlevelonstep.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

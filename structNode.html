@@ -148,6 +148,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structNode.html" title="The Node class wraps the tiles from the World Library in order to make them compatible with the pathf...">Node</a> class wraps the tiles from the World Library in order to make them compatible with the pathfinder. </p>
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00013">13</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad7a34779cad45d997bfd6d3d8043c75f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7a34779cad45d997bfd6d3d8043c75f">&#9670;&nbsp;</a></span>Node() <span class="overload">[1/5]</span></h2>
@@ -173,9 +175,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="structNode.html" title="The Node class wraps the tiles from the World Library in order to make them compatible with the pathf...">Node</a> empty constructor. </p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        : <a class="code" href="classTile.html">Tile</a>(0, 0, 0) {};</div>
-<div class="ttc" id="aclassTile_html"><div class="ttname"><a href="classTile.html">Tile</a></div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00017">17</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="a5ff163150abffaf314500e1f7fdac672"></a>
@@ -227,8 +229,9 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        : <a class="code" href="classTile.html">Tile</a>(x, y, val) {};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00025">25</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="a46bfb6d7f730a9add965d9cb5f4da972"></a>
@@ -262,8 +265,9 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        : <a class="code" href="classTile.html">Tile</a>(t) {};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00031">31</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="a277918b68827f6ffd8150f450b0c12c3"></a>
@@ -297,18 +301,9 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        : <a class="code" href="classTile.html">Tile</a>(n.getXPos(), n.getYPos(), n.getValue())</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        , <a class="code" href="structNode.html#ad16e9a3090431644ea3283b07c91a6a4">f</a>(n.<a class="code" href="structNode.html#ad16e9a3090431644ea3283b07c91a6a4">f</a>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        , <a class="code" href="structNode.html#a914881afe2945fb2e60eb68a6c223d30">g</a>(n.<a class="code" href="structNode.html#a914881afe2945fb2e60eb68a6c223d30">g</a>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        , <a class="code" href="structNode.html#ab7d8a0250a536b3b221dd6d42e7630e0">h</a>(n.<a class="code" href="structNode.html#ab7d8a0250a536b3b221dd6d42e7630e0">h</a>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        , <a class="code" href="structNode.html#aa1bdec4e775fc578632e6a2dced9e251">visited</a>(n.<a class="code" href="structNode.html#aa1bdec4e775fc578632e6a2dced9e251">visited</a>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        , <a class="code" href="structNode.html#a632ea91c6a13082308f7692649a68880">prev</a>(n.<a class="code" href="structNode.html#a632ea91c6a13082308f7692649a68880">prev</a>) {};</div>
-<div class="ttc" id="astructNode_html_a632ea91c6a13082308f7692649a68880"><div class="ttname"><a href="structNode.html#a632ea91c6a13082308f7692649a68880">Node::prev</a></div><div class="ttdeci">Node * prev</div><div class="ttdoc">prev pointer to the previous Node.</div><div class="ttdef"><b>Definition:</b> node.h:83</div></div>
-<div class="ttc" id="astructNode_html_a914881afe2945fb2e60eb68a6c223d30"><div class="ttname"><a href="structNode.html#a914881afe2945fb2e60eb68a6c223d30">Node::g</a></div><div class="ttdeci">float g</div><div class="ttdoc">(f, g, h) the weights for the model.</div><div class="ttdef"><b>Definition:</b> node.h:74</div></div>
-<div class="ttc" id="astructNode_html_aa1bdec4e775fc578632e6a2dced9e251"><div class="ttname"><a href="structNode.html#aa1bdec4e775fc578632e6a2dced9e251">Node::visited</a></div><div class="ttdeci">bool visited</div><div class="ttdoc">visited if this Node has been visited.</div><div class="ttdef"><b>Definition:</b> node.h:79</div></div>
-<div class="ttc" id="astructNode_html_ab7d8a0250a536b3b221dd6d42e7630e0"><div class="ttname"><a href="structNode.html#ab7d8a0250a536b3b221dd6d42e7630e0">Node::h</a></div><div class="ttdeci">float h</div><div class="ttdoc">(f, g, h) the weights for the model.</div><div class="ttdef"><b>Definition:</b> node.h:74</div></div>
-<div class="ttc" id="astructNode_html_ad16e9a3090431644ea3283b07c91a6a4"><div class="ttname"><a href="structNode.html#ad16e9a3090431644ea3283b07c91a6a4">Node::f</a></div><div class="ttdeci">float f</div><div class="ttdoc">(f, g, h) the weights for the model.</div><div class="ttdef"><b>Definition:</b> node.h:74</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00037">37</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="adfc7844b6f3f29598de2290bf32d65cc"></a>
@@ -342,11 +337,9 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        : <a class="code" href="classTile.html">Tile</a>(obj[DataRole::Position].toPoint().x(),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;               obj[DataRole::Position].toPoint().y(),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;               obj.contains(DataRole::Energy) ? obj[DataRole::Energy].toFloat() : 0) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00048">48</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="af5e3fa79300bf5f3f2f3ecae6e795a94"></a>
@@ -371,8 +364,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00053">53</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -408,18 +402,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New node. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;n) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            Tile::operator=(n);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="structNode.html#ad16e9a3090431644ea3283b07c91a6a4">f</a> = n.<a class="code" href="structNode.html#ad16e9a3090431644ea3283b07c91a6a4">f</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="structNode.html#a914881afe2945fb2e60eb68a6c223d30">g</a> = n.<a class="code" href="structNode.html#a914881afe2945fb2e60eb68a6c223d30">g</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="structNode.html#ab7d8a0250a536b3b221dd6d42e7630e0">h</a> = n.<a class="code" href="structNode.html#ab7d8a0250a536b3b221dd6d42e7630e0">h</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="structNode.html#aa1bdec4e775fc578632e6a2dced9e251">visited</a> = n.<a class="code" href="structNode.html#aa1bdec4e775fc578632e6a2dced9e251">visited</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="structNode.html#a632ea91c6a13082308f7692649a68880">prev</a> = n.<a class="code" href="structNode.html#a632ea91c6a13082308f7692649a68880">prev</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00059">59</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -437,6 +422,8 @@ Public Attributes</h2></td></tr>
 
 <p>(f, g, h) the weights for the model. </p>
 
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00074">74</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="a914881afe2945fb2e60eb68a6c223d30"></a>
@@ -452,6 +439,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>(f, g, h) the weights for the model. </p>
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00074">74</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -469,6 +458,8 @@ Public Attributes</h2></td></tr>
 
 <p>(f, g, h) the weights for the model. </p>
 
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00074">74</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="a632ea91c6a13082308f7692649a68880"></a>
@@ -485,6 +476,8 @@ Public Attributes</h2></td></tr>
 
 <p>prev pointer to the previous <a class="el" href="structNode.html" title="The Node class wraps the tiles from the World Library in order to make them compatible with the pathf...">Node</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00083">83</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+
 </div>
 </div>
 <a id="aa1bdec4e775fc578632e6a2dced9e251"></a>
@@ -500,6 +493,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>visited if this <a class="el" href="structNode.html" title="The Node class wraps the tiles from the World Library in order to make them compatible with the pathf...">Node</a> has been visited. </p>
+
+<p class="definition">Definition at line <a class="el" href="node_8h_source.html#l00079">79</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>

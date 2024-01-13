@@ -10,7 +10,6 @@ var dir_4e054584036fcf22d79027413e8268f3 =
     [ "behavior.h", "behavior_8h.html", [
       [ "Behavior", "classBehavior.html", "classBehavior" ]
     ] ],
-    [ "behaviors.h", "behaviors_8h.html", null ],
     [ "health.cpp", "health_8cpp.html", null ],
     [ "health.h", "health_8h.html", [
       [ "Health", "classHealth.html", "classHealth" ],

@@ -99,11 +99,11 @@ Inheritance diagram for RandomMovementBehavior:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRandomMovementBehavior__inherit__graph.png" border="0" usemap="#aRandomMovementBehavior_inherit__map" alt="Inheritance graph"/></div>
 <map name="aRandomMovementBehavior_inherit__map" id="aRandomMovementBehavior_inherit__map">
-<area shape="rect" title="The RandomMovementBehavior class makes an object move randomly every tick." alt="" coords="9,836,228,987"/>
-<area shape="rect" href="classQObject.html" title=" " alt="" coords="5,645,80,722"/>
-<area shape="rect" href="classGenericMoveBehavior.html" title="The GenericMoveBehavior class handles movement actions." alt="" coords="104,579,285,788"/>
-<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="85,219,304,531"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="100,5,289,171"/>
+<area shape="rect" title="The RandomMovementBehavior class makes an object move randomly every tick." alt="" coords="9,895,228,1045"/>
+<area shape="rect" href="classQObject.html" title=" " alt="" coords="5,703,80,781"/>
+<area shape="rect" href="classGenericMoveBehavior.html" title="The GenericMoveBehavior class handles movement actions." alt="" coords="104,637,285,847"/>
+<area shape="rect" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="85,277,304,589"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="100,5,289,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -171,6 +171,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classRandomMovementBehavior.html" title="The RandomMovementBehavior class makes an object move randomly every tick.">RandomMovementBehavior</a> class makes an object move randomly every tick. </p>
+
+<p class="definition">Definition at line <a class="el" href="randommovementbehavior_8h_source.html#l00010">10</a> of file <a class="el" href="randommovementbehavior_8h_source.html">randommovementbehavior.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5c9e8d54beda1d9fa7ce4446aebe3784"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c9e8d54beda1d9fa7ce4446aebe3784">&#9670;&nbsp;</a></span>RandomMovementBehavior() <span class="overload">[1/2]</span></h2>
@@ -203,13 +205,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        : <a class="code" href="classGenericMoveBehavior.html#a5f92dc2281f9cb43b5f795ee87fec7b6">GenericMoveBehavior</a>(owner) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        connect(owner, &amp;<a class="code" href="classGameObject.html#a88feb2e3a638cedcebaf3ba8614f908f">GameObject::tick</a>, <span class="keyword">this</span>, &amp;<a class="code" href="classRandomMovementBehavior.html#aaec71f58766779c5d4fc7852778b9c59">RandomMovementBehavior::moveRandomly</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
-<div class="ttc" id="aclassGameObject_html_a88feb2e3a638cedcebaf3ba8614f908f"><div class="ttname"><a href="classGameObject.html#a88feb2e3a638cedcebaf3ba8614f908f">GameObject::tick</a></div><div class="ttdeci">void tick()</div><div class="ttdoc">Signal emitted to indicate a game tick.</div></div>
-<div class="ttc" id="aclassGenericMoveBehavior_html_a5f92dc2281f9cb43b5f795ee87fec7b6"><div class="ttname"><a href="classGenericMoveBehavior.html#a5f92dc2281f9cb43b5f795ee87fec7b6">GenericMoveBehavior::GenericMoveBehavior</a></div><div class="ttdeci">GenericMoveBehavior()=delete</div></div>
-<div class="ttc" id="aclassRandomMovementBehavior_html_aaec71f58766779c5d4fc7852778b9c59"><div class="ttname"><a href="classRandomMovementBehavior.html#aaec71f58766779c5d4fc7852778b9c59">RandomMovementBehavior::moveRandomly</a></div><div class="ttdeci">void moveRandomly()</div><div class="ttdoc">moveRandomly make a random movement in a direction. The directions are all multiples of 45 degrees so...</div><div class="ttdef"><b>Definition:</b> randommovementbehavior.cpp:5</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="randommovementbehavior_8h_source.html#l00017">17</a> of file <a class="el" href="randommovementbehavior_8h_source.html">randommovementbehavior.h</a>.</p>
+
 </div>
 </div>
 <a id="afae5ac1858298978e2690339053760fd"></a>
@@ -262,65 +260,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>moveRandomly make a random movement in a direction. The directions are all multiples of 45 degrees so the owner can move to all eight neighbors. </p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                          {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">bool</span> steppable = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">float</span> energy = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;neighbor : <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getAllNeighbors()) {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">if</span>(!neighbor) {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">// AND the steppability of every neighbor, if any is not steppable result will be false.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        steppable &amp;= neighbor-&gt;getBehavior&lt;<a class="code" href="classMovement.html">Movement</a>&gt;()-&gt;<a class="code" href="classMovement.html#a81d99c6849438e1495b57109df45285e">isSteppable</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="comment">// Check if there is a protagonist in the neigbor. TODO: Put this in the game object.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;data : neighbor-&gt;getAllData()) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">if</span>(data[DataRole::Type].value&lt;ObjectType&gt;() == ObjectType::Protagonist) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// Get the energy of the tile around it, if it is infinite, make it very big.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">float</span> neighborEnergy = neighbor-&gt;getData(DataRole::Energy).toFloat();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        neighborEnergy = neighborEnergy == INFINITY ? 1000000000 : neighborEnergy;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// Save the biggest energy of all neighbors.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        energy = neighborEnergy &gt; energy ? neighborEnergy : energy;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// If no neigbors are steppable or the energy is lower than the highest neighbor stop moving.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Enemies should have large energies, I don&#39;t like it that much when they stop moving.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span>(!steppable || energy &gt; <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getData(DataRole::Energy).toFloat()) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::Energy, 0);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        disconnect(<a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>, &amp;<a class="code" href="classGameObject.html#a88feb2e3a638cedcebaf3ba8614f908f">GameObject::tick</a>, <span class="keyword">this</span>, &amp;<a class="code" href="classRandomMovementBehavior.html#aaec71f58766779c5d4fc7852778b9c59">RandomMovementBehavior::moveRandomly</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Declares a uniform distribution from 0 to 7. Much more natural looking than the default</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// RandomGenerator (they don&#39;t aggregate in corners).</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::uniform_int_distribution&lt;&gt; dist(0, 7);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> direction, count = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Ensure it is uniquely seeded by using the global static method of QRandomGenerator.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        direction = dist(*QRandomGenerator::global()) * 45;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// If it can&#39;t move it is probably stuck, exit.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>(count &gt; 7) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        count++;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    } <span class="keywordflow">while</span>(!<a class="code" href="classGenericMoveBehavior.html#aa653e8918e98a56557d1af89f1ab34e5">GenericMoveBehavior::stepOn</a>(<span class="keyword">static_cast&lt;</span><a class="code" href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">Direction</a><span class="keyword">&gt;</span>(direction)));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="aclassGenericMoveBehavior_html_aa653e8918e98a56557d1af89f1ab34e5"><div class="ttname"><a href="classGenericMoveBehavior.html#aa653e8918e98a56557d1af89f1ab34e5">GenericMoveBehavior::stepOn</a></div><div class="ttdeci">bool stepOn(QPointer&lt; GameObject &gt; target) override</div><div class="ttdoc">stepOn moves on top of a target. The stepOn function checks if everything in the target has a Movemen...</div><div class="ttdef"><b>Definition:</b> genericmovebehavior.cpp:3</div></div>
-<div class="ttc" id="aclassMovement_html"><div class="ttname"><a href="classMovement.html">Movement</a></div><div class="ttdoc">The Movement class handles the actions of moving. It is an abstract class. All the functions return f...</div><div class="ttdef"><b>Definition:</b> movement.h:18</div></div>
-<div class="ttc" id="aclassMovement_html_a81d99c6849438e1495b57109df45285e"><div class="ttname"><a href="classMovement.html#a81d99c6849438e1495b57109df45285e">Movement::isSteppable</a></div><div class="ttdeci">virtual bool isSteppable()</div><div class="ttdoc">isStepable checks weather the owner is steppable.</div><div class="ttdef"><b>Definition:</b> movement.h:60</div></div>
-<div class="ttc" id="anamespace__pub_html_aceb36dd0edefc86835061a00052d3ae0"><div class="ttname"><a href="namespace__pub.html#aceb36dd0edefc86835061a00052d3ae0">_pub::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> publicenums.h:46</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="randommovementbehavior_8cpp_source.html#l00005">5</a> of file <a class="el" href="randommovementbehavior_8cpp_source.html">randommovementbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/movement/<a class="el" href="randommovementbehavior_8h_source.html">randommovementbehavior.h</a></li>
-<li>model/behaviors/concrete/movement/<a class="el" href="randommovementbehavior_8cpp.html">randommovementbehavior.cpp</a></li>
+<li>model/behaviors/concrete/movement/<a class="el" href="randommovementbehavior_8cpp_source.html">randommovementbehavior.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

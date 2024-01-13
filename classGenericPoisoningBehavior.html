@@ -98,9 +98,9 @@ Inheritance diagram for GenericPoisoningBehavior:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGenericPoisoningBehavior__inherit__graph.png" border="0" usemap="#aGenericPoisoningBehavior_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGenericPoisoningBehavior_inherit__map" id="aGenericPoisoningBehavior_inherit__map">
-<area shape="rect" title="The GenericPoisoningBehavior class handles the poison action from an object." alt="" coords="20,505,228,685"/>
-<area shape="rect" href="classPoison.html" title="The Poison class is an abstract class that handles poison actions." alt="" coords="5,219,243,457"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,219,171"/>
+<area shape="rect" title="The GenericPoisoningBehavior class handles the poison action from an object." alt="" coords="20,564,228,744"/>
+<area shape="rect" href="classPoison.html" title="The Poison class is an abstract class that handles poison actions." alt="" coords="5,277,243,516"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,219,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -150,6 +150,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classGenericPoisoningBehavior.html" title="The GenericPoisoningBehavior class handles the poison action from an object.">GenericPoisoningBehavior</a> class handles the poison action from an object. </p>
+
+<p class="definition">Definition at line <a class="el" href="genericpoisoningbehavior_8h_source.html#l00009">9</a> of file <a class="el" href="genericpoisoningbehavior_8h_source.html">genericpoisoningbehavior.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa4a0eacacabd8258f8f926779d480c4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4a0eacacabd8258f8f926779d480c4f">&#9670;&nbsp;</a></span>GenericPoisoningBehavior() <span class="overload">[1/2]</span></h2>
@@ -182,9 +184,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classPoison.html#ad728676e94a47846f3cd4be163452b30">Poison</a>(owner) {};</div>
-<div class="ttc" id="aclassPoison_html_ad728676e94a47846f3cd4be163452b30"><div class="ttname"><a href="classPoison.html#ad728676e94a47846f3cd4be163452b30">Poison::Poison</a></div><div class="ttdeci">Poison()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="genericpoisoningbehavior_8h_source.html#l00015">15</a> of file <a class="el" href="genericpoisoningbehavior_8h_source.html">genericpoisoningbehavior.h</a>.</p>
+
 </div>
 </div>
 <a id="a428dd965f6c72351d5556f13dd733b46"></a>
@@ -247,40 +249,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the poison level lost. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classPoison.html#a89e974c3da5fcb867a7cf4903347828f">Poison</a>.</p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">auto</span> behaviors = target-&gt;getAllBehaviors&lt;<a class="code" href="classPoison.html">Poison</a>&gt;();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> poisonAdminisered = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;behavior : behaviors) {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">if</span>(behavior) {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="keywordtype">int</span> currentLevel = <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getData(DataRole::PoisonLevel).toInt();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">if</span>(currentLevel &lt;= 0) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="comment">// This makes it more fun, otherwise the player just mops up all the poison in the tiles.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">int</span> poisonAmount = QRandomGenerator::global()-&gt;bounded(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;              <a class="code" href="structPoison_1_1SETTINGS.html#a16ac999065d0d0e4477f7e285b3f9fd1">Poison::SETTINGS::MIN_POISON_PER_ACTION</a>, <a class="code" href="structPoison_1_1SETTINGS.html#a69552c17c73ece7ec633e33ce364285a">Poison::SETTINGS::MAX_POISON_PER_ACTION</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">int</span> poisonedAmount = currentLevel &gt; poisonAmount ? poisonAmount : currentLevel;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            poisonedAmount = behavior-&gt;getPoisoned(poisonedAmount);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            poisonAdminisered += poisonedAmount;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::PoisonLevel, QVariant(currentLevel - poisonedAmount));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> poisonAdminisered;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-<div class="ttc" id="aclassPoison_html"><div class="ttname"><a href="classPoison.html">Poison</a></div><div class="ttdoc">The Poison class is an abstract class that handles poison actions.</div><div class="ttdef"><b>Definition:</b> poison.h:12</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a16ac999065d0d0e4477f7e285b3f9fd1"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a16ac999065d0d0e4477f7e285b3f9fd1">Poison::SETTINGS::MIN_POISON_PER_ACTION</a></div><div class="ttdeci">constexpr static int MIN_POISON_PER_ACTION</div><div class="ttdef"><b>Definition:</b> poison.h:39</div></div>
-<div class="ttc" id="astructPoison_1_1SETTINGS_html_a69552c17c73ece7ec633e33ce364285a"><div class="ttname"><a href="structPoison_1_1SETTINGS.html#a69552c17c73ece7ec633e33ce364285a">Poison::SETTINGS::MAX_POISON_PER_ACTION</a></div><div class="ttdeci">constexpr static int MAX_POISON_PER_ACTION</div><div class="ttdoc">How much a Game Object will poison per tick/action.</div><div class="ttdef"><b>Definition:</b> poison.h:41</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="genericpoisoningbehavior_8cpp_source.html#l00005">5</a> of file <a class="el" href="genericpoisoningbehavior_8cpp_source.html">genericpoisoningbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/poison/<a class="el" href="genericpoisoningbehavior_8h_source.html">genericpoisoningbehavior.h</a></li>
-<li>model/behaviors/concrete/poison/<a class="el" href="genericpoisoningbehavior_8cpp.html">genericpoisoningbehavior.cpp</a></li>
+<li>model/behaviors/concrete/poison/<a class="el" href="genericpoisoningbehavior_8cpp_source.html">genericpoisoningbehavior.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

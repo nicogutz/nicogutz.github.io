@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>APT Game: &lt;a href=&quot;https://nicogutz.github.io/&quot;&gt;APT Game Full Documentation&lt;/a&gt;</title>
+<title>APT Game: APT Game Project</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,27 +82,110 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title"><a href="https://nicogutz.github.io/">APT Game Full Documentation</a> </div>  </div>
+<div class="title">APT Game Project </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> </p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-APT Game Project</h1>
-<h2><a class="anchor" id="autotoc_md2"></a>
-Project Summary</h2>
-<p>APT is a dynamic, interactive game developed using C++ and the Qt framework. The game combines strategic movement, attack mechanisms, and various behavior models to create a unique gaming experience.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Contributors</h2>
+<div class="textblock"><p><a class="anchor" id="md_README"></a>APT is a dynamic, interactive game developed using C++ and the Qt framework. The game combines strategic movement, attack mechanisms, and various behavior models to create a unique gaming experience.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Full Documentation - https://nicogutz.github.io</h1>
+<ul>
+<li><a href="https://nicogutz.github.io">Home</a> <br  />
+<ul>
+<li><a class="el" href="md_docs_ARCH.html">Architecture</a></li>
+<li><a class="el" href="md_docs_NOTES.html">General Notes</a></li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Class Structure</h1>
+<p>(Most important classes marked with *)</p>
+<div class="fragment"><div class="line">Project</div>
+<div class="line">├── controller</div>
+<div class="line">│   └── <a class="code" href="classGameController.html">GameController</a>*</div>
+<div class="line">├── view</div>
+<div class="line">│   ├── renderer</div>
+<div class="line">│   │   ├── <a class="code" href="classRenderer.html">Renderer</a>*</div>
+<div class="line">│   │   ├── <a class="code" href="classSpriteRenderer.html">SpriteRenderer</a></div>
+<div class="line">│   │   ├── <a class="code" href="classTextRenderer.html">TextRenderer</a></div>
+<div class="line">│   │   └── <a class="code" href="classColorRenderer.html">ColorRenderer</a></div>
+<div class="line">│   ├── <a class="code" href="classGamePixmapItem.html">GamePixmapItem</a></div>
+<div class="line">│   ├── <a class="code" href="classGameView.html">GameView</a>*</div>
+<div class="line">│   └── <a class="code" href="classGameWindow.html">GameWindow</a>*</div>
+<div class="line">├── model</div>
+<div class="line">│   ├── behaviors</div>
+<div class="line">│   │   ├── concrete*</div>
+<div class="line">│   │   │   ├── attack</div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classCounterAttackBehavior.html">CounterAttackBehavior</a></div>
+<div class="line">│   │   │   │   └── <a class="code" href="classGenericAttackBehavior.html">GenericAttackBehavior</a></div>
+<div class="line">│   │   │   ├── healing</div>
+<div class="line">│   │   │   ├── health</div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classGenericHealingBehavior.html">GenericHealingBehavior</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classGenericHealthBehavior.html">GenericHealthBehavior</a></div>
+<div class="line">│   │   │   │   └── <a class="code" href="classPoisonOnKilledBehavior.html">PoisonOnKilledBehavior</a></div>
+<div class="line">│   │   │   ├── movement</div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classGenericMoveBehavior.html">GenericMoveBehavior</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classGenericWalkableBehavior.html">GenericWalkableBehavior</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classHealOnStepBehavior.html">HealOnStepBehavior</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classNewLevelOnStep.html">NewLevelOnStep</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classObstacleBehavior.html">ObstacleBehavior</a></div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classPoisonOnKilledBehavior.html">PoisonOnKilledBehavior</a></div>
+<div class="line">│   │   │   │   └── <a class="code" href="classRandomMovementBehavior.html">RandomMovementBehavior</a></div>
+<div class="line">│   │   │   ├── poison</div>
+<div class="line">│   │   │   │   ├── <a class="code" href="classGenericPoisonableBehavior.html">GenericPoisonableBehavior</a></div>
+<div class="line">│   │   │   │   └── <a class="code" href="classGenericPoisoningBehavior.html">GenericPoisoningBehavior</a></div>
+<div class="line">│   │   ├── <a class="code" href="classAttack.html">Attack</a></div>
+<div class="line">│   │   ├── <a class="code" href="classBehavior.html">Behavior</a></div>
+<div class="line">│   │   ├── <a class="code" href="classHealth.html">Health</a></div>
+<div class="line">│   │   ├── <a class="code" href="classMovement.html">Movement</a></div>
+<div class="line">│   │   └── <a class="code" href="classPoison.html">Poison</a></div>
+<div class="line">│   ├── noise</div>
+<div class="line">│   │   └── <a class="code" href="classPerlinNoise.html">PerlinNoise</a></div>
+<div class="line">│   ├── <a class="code" href="classGameObject.html">GameObject</a>*</div>
+<div class="line">│   ├── <a class="code" href="classGameObjectModel.html">GameObjectModel</a>*</div>
+<div class="line">│   ├── <a class="code" href="classGameObjectSettings.html">GameObjectSettings</a></div>
+<div class="line">│   └── <a class="code" href="classObjectModelFactory.html">ObjectModelFactory</a></div>
+<div class="line">├── <a class="code" href="structNode.html">Node</a></div>
+<div class="ttc" id="aclassAttack_html"><div class="ttname"><a href="classAttack.html">Attack</a></div><div class="ttdoc">The Attack interface handles all the actions related to attacking and getting attacked.</div><div class="ttdef"><b>Definition:</b> <a href="attack_8h_source.html#l00011">attack.h:11</a></div></div>
+<div class="ttc" id="aclassBehavior_html"><div class="ttname"><a href="classBehavior.html">Behavior</a></div><div class="ttdoc">The Behavior class is a marker interface (abstract class) that all the behaviors have to extend....</div><div class="ttdef"><b>Definition:</b> <a href="behavior_8h_source.html#l00014">behavior.h:14</a></div></div>
+<div class="ttc" id="aclassColorRenderer_html"><div class="ttname"><a href="classColorRenderer.html">ColorRenderer</a></div><div class="ttdoc">The ColorRenderer class makes shapes filled with colors to represent the world.</div><div class="ttdef"><b>Definition:</b> <a href="colorrenderer_8h_source.html#l00014">colorrenderer.h:14</a></div></div>
+<div class="ttc" id="aclassCounterAttackBehavior_html"><div class="ttname"><a href="classCounterAttackBehavior.html">CounterAttackBehavior</a></div><div class="ttdoc">The CounterAttackBehavior class extends the GenericAttackBehavior so that the owner attacks back afte...</div><div class="ttdef"><b>Definition:</b> <a href="counterattackbehavior_8h_source.html#l00009">counterattackbehavior.h:9</a></div></div>
+<div class="ttc" id="aclassGameController_html"><div class="ttname"><a href="classGameController.html">GameController</a></div><div class="ttdoc">The GameController class holds all the models and the view. It directs the user input and the game st...</div><div class="ttdef"><b>Definition:</b> <a href="gamecontroller_8h_source.html#l00020">gamecontroller.h:20</a></div></div>
+<div class="ttc" id="aclassGameObjectModel_html"><div class="ttname"><a href="classGameObjectModel.html">GameObjectModel</a></div><div class="ttdoc">The GameObjectModel class represents the model of the game world. It holds a grid of GameObject point...</div><div class="ttdef"><b>Definition:</b> <a href="gameobjectmodel_8h_source.html#l00019">gameobjectmodel.h:19</a></div></div>
+<div class="ttc" id="aclassGameObjectSettings_html"><div class="ttname"><a href="classGameObjectSettings.html">GameObjectSettings</a></div><div class="ttdoc">GameObjectSettings class provides configurations for different types of GameObjects....</div><div class="ttdef"><b>Definition:</b> <a href="gameobjectsettings_8h_source.html#l00021">gameobjectsettings.h:21</a></div></div>
+<div class="ttc" id="aclassGameObject_html"><div class="ttname"><a href="classGameObject.html">GameObject</a></div><div class="ttdoc">The GameObject class represents an individual entity within the game world, capable of various intera...</div><div class="ttdef"><b>Definition:</b> <a href="gameobject_8h_source.html#l00018">gameobject.h:18</a></div></div>
+<div class="ttc" id="aclassGamePixmapItem_html"><div class="ttname"><a href="classGamePixmapItem.html">GamePixmapItem</a></div><div class="ttdoc">The GamePixmapItem class is the custom child class of QGraphicsPixmapItem. to define and store animat...</div><div class="ttdef"><b>Definition:</b> <a href="gamepixmapitem_8h_source.html#l00015">gamepixmapitem.h:15</a></div></div>
+<div class="ttc" id="aclassGameView_html"><div class="ttname"><a href="classGameView.html">GameView</a></div><div class="ttdoc">The GameView class is the scene where all the visuals of the world are placed.</div><div class="ttdef"><b>Definition:</b> <a href="gameview_8h_source.html#l00012">gameview.h:12</a></div></div>
+<div class="ttc" id="aclassGameWindow_html"><div class="ttname"><a href="classGameWindow.html">GameWindow</a></div><div class="ttdoc">The GameWindow class is the main window for the game.</div><div class="ttdef"><b>Definition:</b> <a href="gamewindow_8h_source.html#l00029">gamewindow.h:29</a></div></div>
+<div class="ttc" id="aclassGenericAttackBehavior_html"><div class="ttname"><a href="classGenericAttackBehavior.html">GenericAttackBehavior</a></div><div class="ttdoc">The GenericAttackBehavior class handles the basic actions of a class that can attack or be attacked.</div><div class="ttdef"><b>Definition:</b> <a href="genericattackbehavior_8h_source.html#l00009">genericattackbehavior.h:9</a></div></div>
+<div class="ttc" id="aclassGenericHealingBehavior_html"><div class="ttname"><a href="classGenericHealingBehavior.html">GenericHealingBehavior</a></div><div class="ttdoc">The GenericHealingBehavior class handles behavior of objects that heal others.</div><div class="ttdef"><b>Definition:</b> <a href="generichealingbehavior_8h_source.html#l00010">generichealingbehavior.h:10</a></div></div>
+<div class="ttc" id="aclassGenericHealthBehavior_html"><div class="ttname"><a href="classGenericHealthBehavior.html">GenericHealthBehavior</a></div><div class="ttdoc">The GenericHealthBehavior class sets the basic actions to change an objects health and death.</div><div class="ttdef"><b>Definition:</b> <a href="generichealthbehavior_8h_source.html#l00009">generichealthbehavior.h:9</a></div></div>
+<div class="ttc" id="aclassGenericMoveBehavior_html"><div class="ttname"><a href="classGenericMoveBehavior.html">GenericMoveBehavior</a></div><div class="ttdoc">The GenericMoveBehavior class handles movement actions.</div><div class="ttdef"><b>Definition:</b> <a href="genericmovebehavior_8h_source.html#l00008">genericmovebehavior.h:8</a></div></div>
+<div class="ttc" id="aclassGenericPoisonableBehavior_html"><div class="ttname"><a href="classGenericPoisonableBehavior.html">GenericPoisonableBehavior</a></div><div class="ttdoc">The GenericPoisonableBehavior class handles actions from objects that can be harmed by poison....</div><div class="ttdef"><b>Definition:</b> <a href="genericpoisonablebehavior_8h_source.html#l00011">genericpoisonablebehavior.h:11</a></div></div>
+<div class="ttc" id="aclassGenericPoisoningBehavior_html"><div class="ttname"><a href="classGenericPoisoningBehavior.html">GenericPoisoningBehavior</a></div><div class="ttdoc">The GenericPoisoningBehavior class handles the poison action from an object.</div><div class="ttdef"><b>Definition:</b> <a href="genericpoisoningbehavior_8h_source.html#l00009">genericpoisoningbehavior.h:9</a></div></div>
+<div class="ttc" id="aclassGenericWalkableBehavior_html"><div class="ttname"><a href="classGenericWalkableBehavior.html">GenericWalkableBehavior</a></div><div class="ttdoc">The GenericWalkableBehavior class simply returns true on the function isSteppable.</div><div class="ttdef"><b>Definition:</b> <a href="genericwalkablebehavior_8h_source.html#l00008">genericwalkablebehavior.h:8</a></div></div>
+<div class="ttc" id="aclassHealOnStepBehavior_html"><div class="ttname"><a href="classHealOnStepBehavior.html">HealOnStepBehavior</a></div><div class="ttdoc">The HealOnStepBehavior class calls the heal function from the owner on the source.</div><div class="ttdef"><b>Definition:</b> <a href="healonstepbehavior_8h_source.html#l00009">healonstepbehavior.h:9</a></div></div>
+<div class="ttc" id="aclassHealth_html"><div class="ttname"><a href="classHealth.html">Health</a></div><div class="ttdoc">The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ...</div><div class="ttdef"><b>Definition:</b> <a href="health_8h_source.html#l00014">health.h:14</a></div></div>
+<div class="ttc" id="aclassMovement_html"><div class="ttname"><a href="classMovement.html">Movement</a></div><div class="ttdoc">The Movement class handles the actions of moving. It is an abstract class. All the functions return f...</div><div class="ttdef"><b>Definition:</b> <a href="movement_8h_source.html#l00018">movement.h:18</a></div></div>
+<div class="ttc" id="aclassNewLevelOnStep_html"><div class="ttname"><a href="classNewLevelOnStep.html">NewLevelOnStep</a></div><div class="ttdoc">The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level.</div><div class="ttdef"><b>Definition:</b> <a href="newlevelonstep_8h_source.html#l00009">newlevelonstep.h:9</a></div></div>
+<div class="ttc" id="aclassObjectModelFactory_html"><div class="ttname"><a href="classObjectModelFactory.html">ObjectModelFactory</a></div><div class="ttdoc">The ObjectModelFactory class is responsible for creating and populating the game world model....</div><div class="ttdef"><b>Definition:</b> <a href="modelfactory_8h_source.html#l00013">modelfactory.h:13</a></div></div>
+<div class="ttc" id="aclassObstacleBehavior_html"><div class="ttname"><a href="classObstacleBehavior.html">ObstacleBehavior</a></div><div class="ttdef"><b>Definition:</b> <a href="obstaclebehavior_8h_source.html#l00006">obstaclebehavior.h:6</a></div></div>
+<div class="ttc" id="aclassPerlinNoise_html"><div class="ttname"><a href="classPerlinNoise.html">PerlinNoise</a></div><div class="ttdef"><b>Definition:</b> <a href="perlinnoise_8h_source.html#l00016">perlinnoise.h:16</a></div></div>
+<div class="ttc" id="aclassPoisonOnKilledBehavior_html"><div class="ttname"><a href="classPoisonOnKilledBehavior.html">PoisonOnKilledBehavior</a></div><div class="ttdoc">The PoisonOnKilledBehavior class triggers the poisoning of neighbors when object dies....</div><div class="ttdef"><b>Definition:</b> <a href="poisononkilledbehavior_8h_source.html#l00011">poisononkilledbehavior.h:11</a></div></div>
+<div class="ttc" id="aclassPoison_html"><div class="ttname"><a href="classPoison.html">Poison</a></div><div class="ttdoc">The Poison class is an abstract class that handles poison actions.</div><div class="ttdef"><b>Definition:</b> <a href="poison_8h_source.html#l00012">poison.h:12</a></div></div>
+<div class="ttc" id="aclassRandomMovementBehavior_html"><div class="ttname"><a href="classRandomMovementBehavior.html">RandomMovementBehavior</a></div><div class="ttdoc">The RandomMovementBehavior class makes an object move randomly every tick.</div><div class="ttdef"><b>Definition:</b> <a href="randommovementbehavior_8h_source.html#l00010">randommovementbehavior.h:10</a></div></div>
+<div class="ttc" id="aclassRenderer_html"><div class="ttname"><a href="classRenderer.html">Renderer</a></div><div class="ttdoc">The Renderer class is a base class for the renderers that use different visualizations for objects.</div><div class="ttdef"><b>Definition:</b> <a href="renderer_8h_source.html#l00012">renderer.h:12</a></div></div>
+<div class="ttc" id="aclassSpriteRenderer_html"><div class="ttname"><a href="classSpriteRenderer.html">SpriteRenderer</a></div><div class="ttdoc">The SpriteRenderer class handles the conversion of data to GamePixmapItems. It also animates behavior...</div><div class="ttdef"><b>Definition:</b> <a href="spriterenderer_8h_source.html#l00015">spriterenderer.h:15</a></div></div>
+<div class="ttc" id="aclassTextRenderer_html"><div class="ttname"><a href="classTextRenderer.html">TextRenderer</a></div><div class="ttdoc">TextRenderer Performs rendering of the objects for the text view.</div><div class="ttdef"><b>Definition:</b> <a href="textrenderer_8h_source.html#l00009">textrenderer.h:9</a></div></div>
+<div class="ttc" id="astructNode_html"><div class="ttname"><a href="structNode.html">Node</a></div><div class="ttdoc">The Node class wraps the tiles from the World Library in order to make them compatible with the pathf...</div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00013">node.h:13</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
+Contributors</h1>
 <pre class="fragment">• Nicolas Gutrierrez: Implemented the model and the behaviors (GameObject, GameObjectModel, GamePixmapItem, publicEnums, GameObjectSettings, + all the behaviors)
 
 • Nur Alda-Onggar: Implemented the views and the renderers (GameView, Renderer, TextRenderer, ColorRenderer, SpriteRenderer)
 
 • Salma Loukili: Implemented the controller and the UI (ModelFactory, GameController, GameWindow, GameWindow.ui, Node.h)
-</pre><h2><a class="anchor" id="autotoc_md4"></a>
-Main Classes</h2>
-<p><a class="el" href="classGameWindow.html" title="The GameWindow class is the main window for the game.">GameWindow</a>, <a class="el" href="classGameController.html" title="The GameController class holds all the models and the view. It directs the user input and the game st...">GameController</a>, <a class="el" href="classGameView.html" title="The GameView class is the scene where all the visuals of the world are placed.">GameView</a>, <a class="el" href="classGameObject.html" title="The GameObject class represents an individual entity within the game world, capable of various intera...">GameObject</a>, <a class="el" href="classGameObjectModel.html" title="The GameObjectModel class represents the model of the game world. It holds a grid of GameObject point...">GameObjectModel</a> + Renderers &amp; Behaviors</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-Game Features Overview</h2>
+</pre> <h1><a class="anchor" id="autotoc_md8"></a>
+Game Features Overview</h1>
 <pre class="fragment">• Three different visualizations (Color, Text and Sprites)
 
 • Seemless switch between visualizations during any point of the game
@@ -150,8 +233,8 @@ Game Features Overview</h2>
 • Health and energy of protagonist displayed
 
 • Level, number of enemies and number of health packs displayed
-</pre><h2><a class="anchor" id="autotoc_md6"></a>
-Weekly Progress Log</h2>
+</pre><h1><a class="anchor" id="autotoc_md9"></a>
+Weekly Progress Log</h1>
 <pre class="fragment">• Week 6-11: Architecture of the game and UML
 • Week 10-12: Basic implementations and experimenting with QT
 • Week 13: Basic world grid and window implemented + model and basic behaviors implemented

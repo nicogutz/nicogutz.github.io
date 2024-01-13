@@ -100,15 +100,15 @@ Inheritance diagram for Movement:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMovement__inherit__graph.png" border="0" usemap="#aMovement_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMovement_inherit__map" id="aMovement_inherit__map">
-<area shape="rect" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="355,219,573,531"/>
-<area shape="rect" href="classGenericMoveBehavior.html" title="The GenericMoveBehavior class handles movement actions." alt="" coords="148,579,329,788"/>
-<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="362,601,566,766"/>
-<area shape="rect" href="classObstacleBehavior.html" title=" " alt="" coords="591,601,828,766"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="369,5,559,171"/>
-<area shape="rect" href="classRandomMovementBehavior.html" title="The RandomMovementBehavior class makes an object move randomly every tick." alt="" coords="5,851,224,1001"/>
-<area shape="rect" href="classHealOnStepBehavior.html" title="The HealOnStepBehavior class calls the heal function from the owner on the source." alt="" coords="249,836,450,1016"/>
-<area shape="rect" href="classNewLevelOnStep.html" title="The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level." alt="" coords="475,851,685,1001"/>
-<area shape="rect" href="classPoisonOnStepBehavior.html" title="The PoisonOnStepBehavior class makes the object poison the source if it has any poison." alt="" coords="710,836,911,1016"/>
+<area shape="rect" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f..." alt="" coords="355,277,573,589"/>
+<area shape="rect" href="classGenericMoveBehavior.html" title="The GenericMoveBehavior class handles movement actions." alt="" coords="148,637,329,847"/>
+<area shape="rect" href="classGenericWalkableBehavior.html" title="The GenericWalkableBehavior class simply returns true on the function isSteppable." alt="" coords="362,659,566,825"/>
+<area shape="rect" href="classObstacleBehavior.html" title=" " alt="" coords="591,659,828,825"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="369,5,559,229"/>
+<area shape="rect" href="classRandomMovementBehavior.html" title="The RandomMovementBehavior class makes an object move randomly every tick." alt="" coords="5,909,224,1060"/>
+<area shape="rect" href="classHealOnStepBehavior.html" title="The HealOnStepBehavior class calls the heal function from the owner on the source." alt="" coords="249,895,450,1075"/>
+<area shape="rect" href="classNewLevelOnStep.html" title="The NewLevelOnStep class handles the stepping on objects that move the protagonist to a new level." alt="" coords="475,909,685,1060"/>
+<area shape="rect" href="classPoisonOnStepBehavior.html" title="The PoisonOnStepBehavior class makes the object poison the source if it has any poison." alt="" coords="710,895,911,1075"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -166,6 +166,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classMovement.html" title="The Movement class handles the actions of moving. It is an abstract class. All the functions return f...">Movement</a> class handles the actions of moving. It is an abstract class. All the functions return false by default so that objects that can move cannot be walked through by default, and objects that can be stepped on cannot be moved. Also, some objects can be stepped on by enemies but not trigger their behaviors. E.G. Doorways can be stepped on by enemies (so they return true on isSteppable and getSteppedOn) but do not start a new level. </p>
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00018">18</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adeb837e6a6ab9c6f54f331e6133e237f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adeb837e6a6ab9c6f54f331e6133e237f">&#9670;&nbsp;</a></span>Movement() <span class="overload">[1/2]</span></h2>
@@ -198,9 +200,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        : <a class="code" href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior</a>(owner) {};</div>
-<div class="ttc" id="aclassBehavior_html_aab6b9945e55735c64af699fef74b23cf"><div class="ttname"><a href="classBehavior.html#aab6b9945e55735c64af699fef74b23cf">Behavior::Behavior</a></div><div class="ttdeci">Behavior()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00024">24</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <a id="a5737ffdf0817509ebbe42075124ce2be"></a>
@@ -250,8 +252,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{};</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8cpp_source.html#l00002">2</a> of file <a class="el" href="movement_8cpp_source.html">movement.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -289,10 +292,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classPoisonOnStepBehavior.html#a13a48a8eb327a55e8bf52fac9d7fb3ca">PoisonOnStepBehavior</a>, <a class="el" href="classNewLevelOnStep.html#ab51af4439b5c8144775bb91020705f17">NewLevelOnStep</a>, and <a class="el" href="classHealOnStepBehavior.html#a149c57ec432c621801869a09335c496d">HealOnStepBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00068">68</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <a id="a81d99c6849438e1495b57109df45285e"></a>
@@ -322,10 +324,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericWalkableBehavior.html#aa2391de0697bb9c2d00b6f5cf124b73e">GenericWalkableBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                               {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00060">60</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <a id="a5bbf97821c4c076660255230735fc388"></a>
@@ -351,10 +352,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                          {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00030">30</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <a id="a877eef2ab0c702bb69f67557e126a346"></a>
@@ -391,10 +391,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericMoveBehavior.html#aa653e8918e98a56557d1af89f1ab34e5">GenericMoveBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                           {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00045">45</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <a id="aa5b2cde0d02fd20fe14906504541ea84"></a>
@@ -431,10 +430,9 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false by default. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classGenericMoveBehavior.html#a5bd2223e2156404c8efa2b928ef9cf8e">GenericMoveBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                             {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="movement_8h_source.html#l00053">53</a> of file <a class="el" href="movement_8h_source.html">movement.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -462,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/<a class="el" href="movement_8h_source.html">movement.h</a></li>
-<li>model/behaviors/<a class="el" href="movement_8cpp.html">movement.cpp</a></li>
+<li>model/behaviors/<a class="el" href="movement_8cpp_source.html">movement.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

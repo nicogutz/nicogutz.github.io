@@ -25,7 +25,6 @@ var annotated_dup =
     [ "Node", "structNode.html", "structNode" ],
     [ "ObjectModelFactory", "classObjectModelFactory.html", "classObjectModelFactory" ],
     [ "ObstacleBehavior", "classObstacleBehavior.html", "classObstacleBehavior" ],
-    [ "OverlayRenderer", "classOverlayRenderer.html", "classOverlayRenderer" ],
     [ "PerlinNoise", "classPerlinNoise.html", "classPerlinNoise" ],
     [ "Poison", "classPoison.html", "classPoison" ],
     [ "PoisonOnKilledBehavior", "classPoisonOnKilledBehavior.html", "classPoisonOnKilledBehavior" ],

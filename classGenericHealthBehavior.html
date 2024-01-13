@@ -98,10 +98,10 @@ Inheritance diagram for GenericHealthBehavior:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGenericHealthBehavior__inherit__graph.png" border="0" usemap="#aGenericHealthBehavior_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGenericHealthBehavior_inherit__map" id="aGenericHealthBehavior_inherit__map">
-<area shape="rect" title="The GenericHealthBehavior class sets the basic actions to change an objects health and death." alt="" coords="30,520,218,700"/>
-<area shape="rect" href="classPoisonOnKilledBehavior.html" title="The PoisonOnKilledBehavior class triggers the poisoning of neighbors when object dies...." alt="" coords="15,748,233,957"/>
-<area shape="rect" href="classHealth.html" title="The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ..." alt="" coords="5,219,243,472"/>
-<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,219,171"/>
+<area shape="rect" title="The GenericHealthBehavior class sets the basic actions to change an objects health and death." alt="" coords="30,579,218,759"/>
+<area shape="rect" href="classPoisonOnKilledBehavior.html" title="The PoisonOnKilledBehavior class triggers the poisoning of neighbors when object dies...." alt="" coords="15,807,233,1016"/>
+<area shape="rect" href="classHealth.html" title="The Health class is an abstract class that handles health behaviors. This class is abstract to avoid ..." alt="" coords="5,277,243,531"/>
+<area shape="rect" href="classBehavior.html" title="The Behavior class is a marker interface (abstract class) that all the behaviors have to extend...." alt="" coords="29,5,219,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -154,6 +154,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classGenericHealthBehavior.html" title="The GenericHealthBehavior class sets the basic actions to change an objects health and death.">GenericHealthBehavior</a> class sets the basic actions to change an objects health and death. </p>
+
+<p class="definition">Definition at line <a class="el" href="generichealthbehavior_8h_source.html#l00009">9</a> of file <a class="el" href="generichealthbehavior_8h_source.html">generichealthbehavior.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad244d9b8263d615dd47eaa9b4880043f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad244d9b8263d615dd47eaa9b4880043f">&#9670;&nbsp;</a></span>GenericHealthBehavior() <span class="overload">[1/2]</span></h2>
@@ -186,9 +188,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classHealth.html#ab93e9d9ae81196519765e03a748bbfe3">Health</a>(owner) {};</div>
-<div class="ttc" id="aclassHealth_html_ab93e9d9ae81196519765e03a748bbfe3"><div class="ttname"><a href="classHealth.html#ab93e9d9ae81196519765e03a748bbfe3">Health::Health</a></div><div class="ttdeci">Health()=delete</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="generichealthbehavior_8h_source.html#l00015">15</a> of file <a class="el" href="generichealthbehavior_8h_source.html">generichealthbehavior.h</a>.</p>
+
 </div>
 </div>
 <a id="a2d65e73746657bda339d45bbe205b3eb"></a>
@@ -245,13 +247,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classHealth.html#abe25a43ec1eed80d1f8e62de9daca895">Health</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classPoisonOnKilledBehavior.html#ab8bd38d0c03bb7d73d07892a42e8e7cd">PoisonOnKilledBehavior</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Not all objects disappear when they die so we cannot use the</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Destroyed DataRole here</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="aclassBehavior_html_abe74f58cf2f890c3270ef06aa68d3c24"><div class="ttname"><a href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">Behavior::m_owner</a></div><div class="ttdeci">QPointer&lt; GameObject &gt; m_owner</div><div class="ttdoc">m_owner the GameObject this behavior belongs to.</div><div class="ttdef"><b>Definition:</b> behavior.h:28</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="generichealthbehavior_8cpp_source.html#l00027">27</a> of file <a class="el" href="generichealthbehavior_8cpp_source.html">generichealthbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ac04d2b1978cccd56a4985efd5df51c64"></a>
@@ -288,39 +286,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the health changed. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classHealth.html#a5b64418057c4aa2c5b53f4671c8b9433">Health</a>.</p>
-<div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                                                      {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    QVariant currentHealth = <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;getData(DataRole::Health);</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordflow">if</span>(currentHealth.isNull()) {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;Cannot change health of object without health&quot;</span>);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    }</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">// Do not heal if fully healed</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span>(currentHealth == <a class="code" href="classHealth.html#ad62e0beaed81a07526ead044ade5058f">Settings</a>.<a class="code" href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">MAX_HEALTH</a> &amp;&amp; amount &gt; 0) {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Check if health change is mortal or bigger than max.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> newHealth = currentHealth.toInt() + amount;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>(newHealth &lt;= <a class="code" href="classHealth.html#ad62e0beaed81a07526ead044ade5058f">Settings</a>.<a class="code" href="structHealth_1_1SETTINGS.html#a651a2044d8f53559f827c9bd65729718">MIN_HEALTH</a>) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::Health, 0);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classGenericHealthBehavior.html#a38f1fd00edbe71b56805a93283a797dc">die</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(newHealth &gt; <a class="code" href="classHealth.html#ad62e0beaed81a07526ead044ade5058f">Settings</a>.<a class="code" href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">MAX_HEALTH</a>) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        newHealth = <a class="code" href="classHealth.html#ad62e0beaed81a07526ead044ade5058f">Settings</a>.<a class="code" href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">MAX_HEALTH</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classBehavior.html#abe74f58cf2f890c3270ef06aa68d3c24">m_owner</a>-&gt;setData(DataRole::Health, QVariant(newHealth));</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> newHealth - currentHealth.toInt();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclassGenericHealthBehavior_html_a38f1fd00edbe71b56805a93283a797dc"><div class="ttname"><a href="classGenericHealthBehavior.html#a38f1fd00edbe71b56805a93283a797dc">GenericHealthBehavior::die</a></div><div class="ttdeci">void die() override</div><div class="ttdoc">die kills an object, deletes them. Since the health = 0 is set in the getHealthChanged function.</div><div class="ttdef"><b>Definition:</b> generichealthbehavior.cpp:27</div></div>
-<div class="ttc" id="aclassHealth_html_ad62e0beaed81a07526ead044ade5058f"><div class="ttname"><a href="classHealth.html#ad62e0beaed81a07526ead044ade5058f">Health::Settings</a></div><div class="ttdeci">static const struct Health::SETTINGS Settings</div></div>
-<div class="ttc" id="astructHealth_1_1SETTINGS_html_a651a2044d8f53559f827c9bd65729718"><div class="ttname"><a href="structHealth_1_1SETTINGS.html#a651a2044d8f53559f827c9bd65729718">Health::SETTINGS::MIN_HEALTH</a></div><div class="ttdeci">static constexpr int MIN_HEALTH</div><div class="ttdef"><b>Definition:</b> health.h:35</div></div>
-<div class="ttc" id="astructHealth_1_1SETTINGS_html_aac94cc993d54a8e488dc4a64ffebf78f"><div class="ttname"><a href="structHealth_1_1SETTINGS.html#aac94cc993d54a8e488dc4a64ffebf78f">Health::SETTINGS::MAX_HEALTH</a></div><div class="ttdeci">static constexpr int MAX_HEALTH</div><div class="ttdef"><b>Definition:</b> health.h:33</div></div>
-</div><!-- fragment -->
+
+<p class="definition">Definition at line <a class="el" href="generichealthbehavior_8cpp_source.html#l00003">3</a> of file <a class="el" href="generichealthbehavior_8cpp_source.html">generichealthbehavior.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>model/behaviors/concrete/health/<a class="el" href="generichealthbehavior_8h_source.html">generichealthbehavior.h</a></li>
-<li>model/behaviors/concrete/health/<a class="el" href="generichealthbehavior_8cpp.html">generichealthbehavior.cpp</a></li>
+<li>model/behaviors/concrete/health/<a class="el" href="generichealthbehavior_8cpp_source.html">generichealthbehavior.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
